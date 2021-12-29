@@ -6,7 +6,7 @@ import Testimonials from "components/modules/demo/testimonials/testimonials";
 import Service from "components/modules/demo/service/service-two";
 import BannerVideo from "components/modules/demo/banner/banner-video-two";
 import Awards from "components/modules/demo/about/awards";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Ads from "components/elements/layouts/ads";
 
 /**

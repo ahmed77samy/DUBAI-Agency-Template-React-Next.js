@@ -1,7 +1,7 @@
 import { TeamItemStyled, H6Styled, WrapperImage } from "./styled/team-item-styled";
 import PropTypes from "prop-types";
 import Image from "next/image";
-import Overlay from "components/elements/layouts/overlay";
+import Overlay from "core/overlay";
 import Social from "components/elements/layouts/social";
 
 /**

@@ -19,7 +19,7 @@ function NotFound(props) {
     return (
         <NotFoundStyled {...props} bg="/img/bg/10.png">
             <ContentStyled>
-            <ThreeLines x="center" y="bottom" />
+                <ThreeLines x="center" y="bottom" />
                 <H1Styled as="h2" className="font-600 m-0">
                     404
                 </H1Styled>

@@ -1,7 +1,7 @@
 import Layout from "components/elements/layouts/layout-demo";
 import Head from "next/head";
 import BlogGridWrapper from "components/modules/blog/blog-grid-wrapper";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Ads from "components/elements/layouts/ads";
 
 /**

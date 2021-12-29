@@ -1,6 +1,6 @@
 import { Modal } from "react-bootstrap";
 import styled, { css } from "styled-components";
-import { SpanStyled } from "./three-lines-styled";
+import { SpanStyled } from "../../components/elements/layouts/styled/three-lines-styled";
 
 export const ModalStyled = styled(Modal)`
     ${({ theme: { colors, breakpoints } }) => css`

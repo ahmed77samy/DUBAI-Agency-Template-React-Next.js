@@ -12,7 +12,7 @@ import KUTE from "kute.js";
 import PropTypes from "prop-types";
 import DefaultButton from "components/elements/buttons/default-button";
 import { Fragment, useEffect, useRef } from "react";
-import Overlay from "components/elements/layouts/overlay";
+import Overlay from "core/overlay";
 
 /**
  * {@inheritdoc}

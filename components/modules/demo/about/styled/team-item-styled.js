@@ -1,4 +1,4 @@
-import { OverlayStyled } from "components/elements/layouts/styled/overlay-styled";
+import { OverlayStyled } from "core/styled/overlay-styled";
 import styled, { css } from "styled-components";
 
 export const TeamItemStyled = styled.div`

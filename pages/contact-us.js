@@ -1,6 +1,6 @@
 import Ads from "components/elements/layouts/ads";
 import Layout from "components/elements/layouts/layout-demo";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Contact from "components/modules/demo/contact/contact";
 import Map from "components/modules/demo/contact/map";
 import Head from "next/head";

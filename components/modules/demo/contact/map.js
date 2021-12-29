@@ -1,5 +1,5 @@
 import { Wrapper, Status } from "@googlemaps/react-wrapper";
-import Loading from "components/elements/layouts/loading";
+import Loading from "core/loading";
 import Section from "components/elements/layouts/section";
 import { Container } from "react-bootstrap";
 import MapComponent from "./map-component";

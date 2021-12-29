@@ -2,32 +2,38 @@ import GenralStyled from "styles/genral-style";
 import { ThemeProvider } from "styled-components";
 import MainTheme from "styles/main-theme";
 import { PageTransition } from "next-page-transitions";
-import DubaiLoadear from "components/elements/layouts/dubai-loader";
-import DubaiComponent from "core/dubai-component"
+import DubaiLoadear from "core/dubai-loader";
+import DubaiComponent from "core/dubai-component";
+import Head from "next/head";
 
-const TIMEOUT = 400;
+const TIMEOUT = 100;
 
 function Dubai({ Component, pageProps, router }) {
     return (
-        <ThemeProvider theme={MainTheme}>
-            <GenralStyled />
-            <PageTransition
-                timeout={TIMEOUT}
-                classNames="page-transition"
-                loadingComponent={<DubaiLoadear />}
-                loadingDelay={100}
-                loadingTimeout={{
-                    enter: TIMEOUT,
-                    exit: 0,
-                }}
-                loadingClassNames="loading-indicator">
-                <DubaiComponent
-                    Component={Component}
-                    pageProps={pageProps}
-                    key={router.route}
-                />
-            </PageTransition>
-        </ThemeProvider>
+        <>
+            <Head>
+                <title>Dubai Creative Agency React Next js</title>
+            </Head>
+            <ThemeProvider theme={MainTheme}>
+                <GenralStyled />
+                <PageTransition
+                    timeout={TIMEOUT}
+                    classNames="page-transition"
+                    loadingComponent={<DubaiLoadear />}
+                    loadingDelay={100}
+                    loadingTimeout={{
+                        enter: TIMEOUT,
+                        exit: 0,
+                    }}
+                    loadingClassNames="loading-indicator">
+                    <DubaiComponent
+                        Component={Component}
+                        pageProps={pageProps}
+                        key={router.route}
+                    />
+                </PageTransition>
+            </ThemeProvider>
+        </>
     );
 }
 

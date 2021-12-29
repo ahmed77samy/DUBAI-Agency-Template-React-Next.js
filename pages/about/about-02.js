@@ -6,7 +6,7 @@ import WhatAbout from "components/modules/demo/about/what-about";
 import Subscrib from "components/modules/demo/about/subscrib";
 import OurTeam from "components/modules/demo/about/our-team";
 import Sponser from "components/modules/demo/sponser/sponser";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Ads from "components/elements/layouts/ads";
 
 /**

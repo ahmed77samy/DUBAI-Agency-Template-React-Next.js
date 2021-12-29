@@ -1,4 +1,4 @@
-import NavLink from "../layouts/nav-link";
+import NavLink from "../../../core/nav-link";
 import { LinkStyled } from "./styled/navbar-demo-styled";
 import PropTypes from "prop-types";
 

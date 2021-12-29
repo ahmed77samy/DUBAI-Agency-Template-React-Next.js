@@ -1,6 +1,7 @@
 import DefaultButton from "components/elements/buttons/default-button";
 import Section from "components/elements/layouts/section";
 import Image from "next/image";
+import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";
 import { FigureStyled } from "./styled/purchase-styled";
 
@@ -16,7 +17,7 @@ function Purchase(props) {
             <Container fluid>
                 <FigureStyled>
                     <Image
-                        src="/img/bg/2.png"
+                        src="/img/bg/1.png"
                         alt="purchase-theme"
                         width={2089}
                         height={669}
@@ -35,12 +36,18 @@ function Purchase(props) {
                         <h2 className="mb-4 h1 text-uppercase font-600">
                             Purchase The template and Make Your Life Easier.
                         </h2>
-                        <DefaultButton
-                            className="mx-auto"
-                            variant="primary"
-                            borderRadius={true}>
-                            Purchase now
-                        </DefaultButton>
+                        <Link
+                            href="https://themeforest.net/user/themezas"
+                            passHref>
+                            <DefaultButton
+                                as="a"
+                                variant="primary"
+                                target="_blank"
+                                borderRadius
+                                className="a-reset mx-auto">
+                                Purchase now
+                            </DefaultButton>
+                        </Link>
                     </Col>
                 </Row>
             </Container>

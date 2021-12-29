@@ -1,6 +1,6 @@
 import Ads from "components/elements/layouts/ads";
 import Layout from "components/elements/layouts/layout-demo";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Social from "components/elements/layouts/social";
 import BlogSingleWrapper from "components/modules/blog/blog-single-wrapper";
 import Head from "next/head";

@@ -1,5 +1,5 @@
 import { LoaderStyled } from "./styled/dubai-loader-styled";
-import ThreeLines from "./three-lines";
+import ThreeLines from "../components/elements/layouts/three-lines";
 
 /**
  * {@inheritdoc}

@@ -1,5 +1,5 @@
-import Aside from "components/elements/layouts/aside.js";
 import Social from "components/elements/layouts/social.js";
+import Aside from "core/aside";
 import Image from "next/image";
 import Link from "next/link";
 import { Col, Row } from "react-bootstrap";

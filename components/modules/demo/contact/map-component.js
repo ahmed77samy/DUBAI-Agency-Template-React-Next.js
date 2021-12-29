@@ -26,7 +26,7 @@ function MapComponent({ center, zoom, styles }) {
             });
         }
         return () => (isMounted = false);
-    }, []);
+    }, []); // eslint-disable-line react-hooks/exhaustive-deps
 
     return <MapStyled ref={mapRef} id="map" />;
 }

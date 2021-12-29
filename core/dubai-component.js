@@ -12,7 +12,7 @@ function DubaiComponent({ Component, pageTransitionReadyToEnter, pageProps }) {
                 pageTransitionReadyToEnter();
                 setLoaded(true);
             }
-        }, 100);
+        }, 500);
         return () => {
             clearTimeout(timeoutId);
         };

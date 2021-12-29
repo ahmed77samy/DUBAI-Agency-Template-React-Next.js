@@ -1,5 +1,5 @@
 import styled, { css, keyframes } from "styled-components";
-import { ThreeLinesStyled } from "./three-lines-styled";
+import { ThreeLinesStyled } from "../../components/elements/layouts/styled/three-lines-styled";
 
 export const LoaderStyled = styled.div`
     ${() => css`

@@ -1,4 +1,4 @@
-import DefaultModal from "components/elements/layouts/modal";
+import DefaultModal from "core/modal";
 import Social from "components/elements/layouts/social";
 import Image from "next/image";
 import Link from "next/link";

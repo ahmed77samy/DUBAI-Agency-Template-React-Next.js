@@ -1,12 +1,12 @@
 import React from "react";
-import { TimesIcon } from "../icons/icons";
+import { TimesIcon } from "../components/elements/icons/icons";
 import {
     ModalStyled,
     ModalBodyStyled,
     ModalHeaderStyled,
     ModalFooterStyled
 } from "./styled/modal-styled";
-import ThreeLines from "./three-lines";
+import ThreeLines from "../components/elements/layouts/three-lines";
 
 /**
  * {@inheritdoc}

@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { AngleDownIcon } from "../icons/icons";
-import NavLink from "../layouts/nav-link";
+import NavLink from "../../../core/nav-link";
 import ListItemsDemo from "./list-items-demo";
 import {
     DropDownStyled,

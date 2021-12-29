@@ -1,4 +1,4 @@
-import Overlay from "components/elements/layouts/overlay";
+import Overlay from "core/overlay";
 import SecHeader from "components/elements/layouts/sec-header";
 import Section from "components/elements/layouts/section";
 import Image from "next/image";

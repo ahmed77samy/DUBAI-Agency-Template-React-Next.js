@@ -1,7 +1,7 @@
 import Layout from "components/elements/layouts/layout-demo";
 import Head from "next/head";
 import PortfolioListWrapper from "components/modules/portfolio/portfolio-list-wrapper";
-import SliderInnerPage from "components/elements/layouts/slider-inner-page";
+import SliderInnerPage from "core/slider-inner-page";
 import Ads from "components/elements/layouts/ads";
 
 /**

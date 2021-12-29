@@ -28,7 +28,7 @@ function Demos(props) {
                 {/* header */}
                 <SecHeader
                     header="demo pages ."
-                    message="4+ demo"
+                    message="17+ demo"
                     layer="demos"
                     align="center"
                 />

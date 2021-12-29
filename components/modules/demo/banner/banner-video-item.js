@@ -1,6 +1,6 @@
 import PlayButton from "components/elements/buttons/play-button";
-import DefaultModal from "components/elements/layouts/modal";
-import Overlay from "components/elements/layouts/overlay";
+import DefaultModal from "core/modal";
+import Overlay from "core/overlay";
 import Image from "next/image";
 import PropTypes from "prop-types";
 import { useState } from "react";

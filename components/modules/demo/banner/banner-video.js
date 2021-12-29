@@ -10,8 +10,8 @@ import {
     WrapperStyled,
 } from "./styled/banner-video-styled";
 import { useState } from "react";
-import Overlay from "components/elements/layouts/overlay";
-import DefaultModal from "components/elements/layouts/modal";
+import Overlay from "core/overlay";
+import DefaultModal from "core/modal";
 import ReactPlayer from "react-player/lazy";
 
 /**

@@ -6,7 +6,7 @@ import {
     WrapperStyled,
 } from "./styled/slider-background-styled.js";
 import ReactPlayer from "react-player/lazy";
-import Overlay from "components/elements/layouts/overlay.js";
+import Overlay from "core/overlay.js";
 import { useCallback, useEffect, useRef, useState } from "react";
 import DefaultButton from "components/elements/buttons/default-button.js";
 import Link from "next/link";

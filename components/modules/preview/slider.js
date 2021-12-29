@@ -10,7 +10,7 @@ import {
     WrapperButtons,
 } from "./styled/slider-styled";
 import Image from "next/image";
-import Overlay from "components/elements/layouts/overlay";
+import Overlay from "core/overlay";
 
 /**
  * {@inheritdoc}

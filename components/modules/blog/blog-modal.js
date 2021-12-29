@@ -1,4 +1,4 @@
-import DefaultModal from "components/elements/layouts/modal";
+import DefaultModal from "core/modal";
 import Image from "next/image";
 import Link from "next/link";
 import { Col, Container, Row } from "react-bootstrap";

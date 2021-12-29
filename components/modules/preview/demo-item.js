@@ -48,7 +48,8 @@ function DemoItem(props) {
                             src={img}
                             alt={name}
                             width={800}
-                            height={1062}
+                            height={1080}
+                            objectFit="cover"
                             placeholder="blur"
                             blurDataURL="/img/bg/loading.png"
                         />
