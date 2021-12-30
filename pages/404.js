@@ -1,5 +1,5 @@
-import Layout from "components/elements/layouts/layout-demo";
-import NotFound from "components/modules/demo/404/not-found";
+import Layout from "components/layouts/layout-demo";
+import NotFound from "modules/404/not-found";
 import Head from "next/head";
 
 /**

@@ -1,13 +1,13 @@
-import Layout from "components/elements/layouts/layout-demo";
-import DigitalExperience from "components/modules/demo/about/digital-experience";
-import Counter from "components/modules/demo/about/counter";
+import Layout from "components/layouts/layout-demo";
+import DigitalExperience from "modules/about/digital-experience";
+import Counter from "modules/about/counter";
 import Head from "next/head";
-import Testimonials from "components/modules/demo/testimonials/testimonials";
-import Service from "components/modules/demo/service/service-two";
-import BannerVideo from "components/modules/demo/banner/banner-video-two";
-import Awards from "components/modules/demo/about/awards";
-import SliderInnerPage from "core/slider-inner-page";
-import Ads from "components/elements/layouts/ads";
+import Testimonials from "modules/about/testimonials";
+import Service from "modules/demo/service-two";
+import BannerVideo from "modules/demo/banner-video-two";
+import Awards from "modules/about/awards";
+import SliderInnerPage from "components/slider-inner-page";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

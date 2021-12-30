@@ -1,16 +1,16 @@
-import Layout from "components/elements/layouts/layout-demo";
-import DigitalExperience from "components/modules/demo/about/digital-experience";
-import Awards from "components/modules/demo/about/awards";
-import Testimonials from "components/modules/demo/testimonials/testimonials";
-import Counter from "components/modules/demo/about/counter";
-import BannerVideo from "components/modules/demo/banner/banner-video";
-import Blog from "components/modules/demo/blog/blog";
-import Contact from "components/modules/demo/contact/contact";
-import Portfolio from "components/modules/demo/portfolio/portfolio-two";
-import Service from "components/modules/demo/service/service-two";
-import Slider from "components/modules/demo/slider/slider-youtube";
+import Layout from "components/layouts/layout-demo";
+import DigitalExperience from "modules/about/digital-experience";
+import Awards from "modules/about/awards";
+import Testimonials from "modules/about/testimonials";
+import Counter from "modules/about/counter";
+import BannerVideo from "modules/demo/banner-video";
+import Blog from "modules/demo/blog";
+import Contact from "modules/contact-us/contact";
+import Portfolio from "modules/demo/portfolio-two";
+import Service from "modules/demo/service-two";
+import Slider from "modules/demo/slider-youtube";
 import Head from "next/head";
-import Ads from "components/elements/layouts/ads";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

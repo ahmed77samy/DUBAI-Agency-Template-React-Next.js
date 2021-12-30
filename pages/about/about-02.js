@@ -1,13 +1,13 @@
-import Layout from "components/elements/layouts/layout-demo";
+import Layout from "components/layouts/layout-demo";
 import Head from "next/head";
-import Service from "components/modules/demo/service/service";
-import BannerVideo from "components/modules/demo/banner/banner-video";
-import WhatAbout from "components/modules/demo/about/what-about";
-import Subscrib from "components/modules/demo/about/subscrib";
-import OurTeam from "components/modules/demo/about/our-team";
-import Sponser from "components/modules/demo/sponser/sponser";
-import SliderInnerPage from "core/slider-inner-page";
-import Ads from "components/elements/layouts/ads";
+import Service from "modules/demo/service";
+import BannerVideo from "modules/demo/banner-video";
+import WhatAbout from "modules/about/what-about";
+import Subscrib from "modules/about/subscrib";
+import OurTeam from "modules/about/our-team";
+import Sponser from "modules/about/sponser";
+import SliderInnerPage from "components/slider-inner-page";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

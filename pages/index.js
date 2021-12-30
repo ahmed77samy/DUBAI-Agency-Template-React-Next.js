@@ -1,9 +1,9 @@
-import Layout from "components/elements/layouts/layout-preview";
-import Demos from "components/modules/preview/demos";
-import Faq from "components/modules/preview/faq";
-import Features from "components/modules/preview/features";
-import Purchase from "components/modules/preview/purchase";
-import Slider from "components/modules/preview/slider";
+import Layout from "components/layouts/layout-preview";
+import Demos from "modules/preview/demos";
+import Faq from "modules/preview/faq";
+import Features from "modules/preview/features";
+import Purchase from "modules/preview/purchase";
+import Slider from "modules/preview/slider";
 import Head from "next/head";
 
 /**

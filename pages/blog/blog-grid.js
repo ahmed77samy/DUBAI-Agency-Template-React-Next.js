@@ -1,8 +1,8 @@
-import Layout from "components/elements/layouts/layout-demo";
+import Layout from "components/layouts/layout-demo";
 import Head from "next/head";
-import BlogGridWrapper from "components/modules/blog/blog-grid-wrapper";
-import SliderInnerPage from "core/slider-inner-page";
-import Ads from "components/elements/layouts/ads";
+import BlogGridWrapper from "modules/blog/blog-grid-wrapper";
+import SliderInnerPage from "components/slider-inner-page";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

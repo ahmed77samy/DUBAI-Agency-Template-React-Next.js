@@ -1,16 +1,16 @@
-import Layout from "components/elements/layouts/layout-demo";
-import Service from "components/modules/demo/service/service";
-import DigitalExperience from "components/modules/demo/about/digital-experience";
-import Counter from "components/modules/demo/about/counter";
-import Slider from "components/modules/demo/slider/slider";
+import Layout from "components/layouts/layout-demo";
+import Service from "modules/demo/service";
+import DigitalExperience from "modules/about/digital-experience";
+import Counter from "modules/about/counter";
+import Slider from "modules/demo/slider";
 import Head from "next/head";
-import Portfolio from "components/modules/demo/portfolio/portfolio";
-import BannerVideo from "components/modules/demo/banner/banner-video";
-import Testimonials from "components/modules/demo/testimonials/testimonials";
-import Blog from "components/modules/demo/blog/blog";
-import Sponser from "components/modules/demo/sponser/sponser";
-import Contact from "components/modules/demo/contact/contact";
-import Ads from "components/elements/layouts/ads";
+import Portfolio from "modules/demo/portfolio";
+import BannerVideo from "modules/demo/banner-video";
+import Testimonials from "modules/about/testimonials";
+import Blog from "modules/demo/blog";
+import Sponser from "modules/about/sponser";
+import Contact from "modules/contact-us/contact";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

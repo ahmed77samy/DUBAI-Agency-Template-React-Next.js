@@ -1,8 +1,8 @@
-import Layout from "components/elements/layouts/layout-demo";
+import Layout from "components/layouts/layout-demo";
 import Head from "next/head";
-import PortfolioAsideLayout from "components/modules/portfolio/portfolio-aside-layout";
-import SliderInnerPage from "core/slider-inner-page";
-import Ads from "components/elements/layouts/ads";
+import PortfolioAsideLayout from "modules/portfolio/portfolio-aside-layout";
+import SliderInnerPage from "components/slider-inner-page";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

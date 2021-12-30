@@ -1,8 +1,8 @@
-import Layout from "components/elements/layouts/layout-demo";
+import Layout from "components/layouts/layout-demo";
 import Head from "next/head";
-import BlogFullscreenWrapper from "components/modules/blog/blog-fullscreen-wrapper";
-import SliderInnerPage from "core/slider-inner-page";
-import Ads from "components/elements/layouts/ads";
+import BlogFullscreenWrapper from "modules/blog/blog-fullscreen-wrapper";
+import SliderInnerPage from "components/slider-inner-page";
+import Ads from "components/ads";
 
 /**
  * {@inheritdoc}

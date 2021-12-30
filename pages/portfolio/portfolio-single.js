@@ -1,8 +1,8 @@
-import Ads from "components/elements/layouts/ads";
-import Layout from "components/elements/layouts/layout-demo";
-import SliderInnerPage from "core/slider-inner-page";
-import Social from "components/elements/layouts/social";
-import PortfolioSingleWrapper from "components/modules/portfolio/portfolio-single-wrapper";
+import Ads from "components/ads";
+import Layout from "components/layouts/layout-demo";
+import SliderInnerPage from "components/slider-inner-page";
+import Social from "components/social";
+import PortfolioSingleWrapper from "modules/portfolio/portfolio-single-wrapper";
 import Head from "next/head";
 
 /**

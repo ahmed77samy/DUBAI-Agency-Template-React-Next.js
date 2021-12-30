@@ -1,15 +1,15 @@
-import Ads from "components/elements/layouts/ads";
-import Layout from "components/elements/layouts/layout-demo";
-import Awards from "components/modules/demo/about/awards";
-import OurTeam from "components/modules/demo/about/our-team";
-import Subscrib from "components/modules/demo/about/subscrib";
-import WhatAbout from "components/modules/demo/about/what-about";
-import BannerVideo from "components/modules/demo/banner/banner-video-two";
-import Blog from "components/modules/demo/blog/blog";
-import Map from "components/modules/demo/contact/map";
-import Portfolio from "components/modules/demo/portfolio/portfolio-two";
-import Service from "components/modules/demo/service/service-two";
-import Slider from "components/modules/demo/slider/slider";
+import Ads from "components/ads";
+import Layout from "components/layouts/layout-demo";
+import Awards from "modules/about/awards";
+import OurTeam from "modules/about/our-team";
+import Subscrib from "modules/about/subscrib";
+import WhatAbout from "modules/about/what-about";
+import BannerVideo from "modules/demo/banner-video-two";
+import Blog from "modules/demo/blog";
+import Map from "modules/contact-us/map";
+import Portfolio from "modules/demo/portfolio-two";
+import Service from "modules/demo/service-two";
+import Slider from "modules/demo/slider";
 import Head from "next/head";
 
 /**
