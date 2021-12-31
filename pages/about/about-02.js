@@ -1,13 +1,14 @@
 import Layout from "components/layouts/layout-demo";
 import Head from "next/head";
-import Service from "modules/demo/service";
-import BannerVideo from "modules/demo/banner-video";
 import WhatAbout from "modules/about/what-about";
 import Subscrib from "modules/about/subscrib";
 import OurTeam from "modules/about/our-team";
 import Sponser from "modules/about/sponser";
 import SliderInnerPage from "components/slider-inner-page";
 import Ads from "components/ads";
+import Awards from "modules/about/awards";
+import Pricing from "modules/about/Pricing";
+import Development from "modules/services/development";
 
 /**
  * {@inheritdoc}
@@ -26,14 +27,14 @@ function AboutUs() {
                     patterns in order to look at things in different way than
                     ever before."
                 />
-                <Service />
+                <Development />
                 <WhatAbout />
                 <Subscrib />
+                <Pricing reverseColor />
                 <Ads />
-                <BannerVideo />
-                <Ads />
-                <OurTeam />
+                <OurTeam reverseColor />
                 <Sponser />
+                <Awards />
             </Layout>
         </div>
     );

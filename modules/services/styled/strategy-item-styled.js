@@ -1,12 +1,12 @@
 import styled, { css } from "styled-components";
 
-export const ServiceItemStyled = styled.div`
+export const StrategyItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
         border: 1px solid ${colors.neutral_700}70;
         padding: 20px;
         height: 100%;
         &:hover {
-            ${IconStyled} , ${H5Styled} {
+            ${H5Styled} {
                 color: ${colors.primary};
             }
         }
@@ -27,14 +27,7 @@ export const HrStyled = styled.hr`
     `}
 `;
 
-export const IconStyled = styled.i`
-    font-size: 30px;
-    margin-right: 10px;
-    transition: color 0.3s;
-`;
-
 export const H5Styled = styled.h5`
-    width: min-content;
     margin: 0;
     transition: color 0.3s;
 `;

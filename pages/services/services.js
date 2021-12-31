@@ -1,43 +1,40 @@
 import Layout from "components/layouts/layout-demo";
-import DigitalExperience from "modules/about/digital-experience";
-import Counter from "modules/about/counter";
 import Head from "next/head";
-import Testimonials from "modules/about/testimonials";
-import Awards from "modules/about/awards";
 import SliderInnerPage from "components/slider-inner-page";
 import Ads from "components/ads";
-import Sponser from "modules/about/sponser";
-import Pricing from "modules/about/Pricing";
+import Strategy from "modules/services/strategy";
+import Digital from "modules/services/digital";
 import Marketing from "modules/services/marketing";
+import Development from "modules/services/development";
+import BannerVideo from "modules/demo/banner-video-two";
 
 /**
  * {@inheritdoc}
  * @returns {React.Component}
  */
-function AboutUs() {
+function Services() {
     return (
-        <div id="about_01_page">
+        <div id="services_page">
             <Head>
                 <title>Dubai Creative Agency React Next js</title>
             </Head>
             <Layout>
                 <SliderInnerPage
-                    title="about us"
+                    title="our Services"
                     description="Creativity involves breaking out of expected & repeatable
                     patterns in order to look at things in different way than
                     ever before."
                 />
+                <Strategy />
                 <Marketing />
-                <DigitalExperience />
-                <Counter />
-                <Pricing reverseColor />
                 <Ads />
-                <Testimonials reverseColor />
-                <Sponser />
-                <Awards />
+                <BannerVideo />
+                <Ads />
+                <Digital />
+                <Development />
             </Layout>
         </div>
     );
 }
 
-export default AboutUs;
+export default Services;

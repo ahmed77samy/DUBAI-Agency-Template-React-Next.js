@@ -1,10 +1,9 @@
 import {
-    ServiceItemStyled,
+    StrategyItemStyled,
     H5Styled,
-    IconStyled,
     HeaderStyled,
     HrStyled,
-} from "./styled/service-item-styled";
+} from "./styled/strategy-item-styled";
 import PropTypes from "prop-types";
 
 /**
@@ -12,27 +11,25 @@ import PropTypes from "prop-types";
  * @param {object} props
  * @returns {React.Component}
  */
-function ServiceItem(props) {
-    const { title, Icon, description } = props.item;
+function StrategyItem(props) {
+    const { title, description } = props.item;
     return (
-        <ServiceItemStyled {...props}>
+        <StrategyItemStyled {...props}>
             <HeaderStyled>
                 <H5Styled className="text-uppercase">{title}</H5Styled>
-                <IconStyled as={Icon} />
             </HeaderStyled>
             <HrStyled />
             <p className="m-0">{description}</p>
-        </ServiceItemStyled>
+        </StrategyItemStyled>
     );
 }
 
-// ServiceItem PropTypes
-ServiceItem.propTypes = {
+// StrategyItem PropTypes
+StrategyItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
-        Icon: PropTypes.func.isRequired,
     }),
 };
 
-export default ServiceItem;
+export default StrategyItem;

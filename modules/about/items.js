@@ -168,3 +168,43 @@ export const sponser_item = [
         img: "/img/about/sponser-2.png",
     },
 ];
+
+export const pricing_item = [
+    {
+        name: "standard plan",
+        description: "for guest started",
+        salary: 80,
+        features: [
+            "2 limited download music.",
+            "2 limited download music.",
+            "2 limited download music.",
+            "2 limited download music.",
+            "2 limited download music.",
+        ],
+    },
+    {
+        name: "basic plan",
+        description: "for users (recommended)",
+        salary: 120,
+        features: [
+            "10 limited download music.",
+            "10 limited download music.",
+            "10 limited download music.",
+            "10 limited download music.",
+            "10 limited download music.",
+            "10 limited download music.",
+        ],
+    },
+    {
+        name: "business plan",
+        description: "for business man",
+        salary: 200,
+        features: [
+            "unlimited download music.",
+            "unlimited download music.",
+            "unlimited download music.",
+            "unlimited download music.",
+            "unlimited download music.",
+        ],
+    },
+];

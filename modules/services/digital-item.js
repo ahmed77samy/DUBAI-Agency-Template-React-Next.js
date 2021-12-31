@@ -1,7 +1,7 @@
 import {
-    ServiceItemStyled,
+    DigitalItemStyled,
     HeaderStyled,
-} from "./styled/service-two-item-styled";
+} from "./styled/digital-item-styled";
 import PropTypes from "prop-types";
 
 /**
@@ -9,10 +9,10 @@ import PropTypes from "prop-types";
  * @param {object} props
  * @returns {React.Component}
  */
-function ServiceItem(props) {
+function DigitalItem(props) {
     const { title, Icon, description } = props.item;
     return (
-        <ServiceItemStyled {...props}>
+        <DigitalItemStyled {...props}>
             {/* header */}
             <HeaderStyled>
                 <Icon className="icon mr-3 text-primary" />
@@ -30,12 +30,12 @@ function ServiceItem(props) {
             </p>
             <p className="m-0">{description}</p>
             {/* content */}
-        </ServiceItemStyled>
+        </DigitalItemStyled>
     );
 }
 
-// ServiceItem PropTypes
-ServiceItem.propTypes = {
+// DigitalItem PropTypes
+DigitalItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
@@ -43,4 +43,4 @@ ServiceItem.propTypes = {
     }),
 };
 
-export default ServiceItem;
+export default DigitalItem;

@@ -1,5 +1,5 @@
 import { faSoundcloud, faSuperpowers, faVimeoV, faYoutube } from "@fortawesome/free-brands-svg-icons";
-import { faAngleDown, faBars, faChartLine, faChevronLeft, faChevronRight, faCog, faFlag, faHome, faLuggageCart, faMobileAlt, faMoneyBillWaveAlt, faPaperPlane, faPlay, faQuoteRight, faReply, faRetweet, faSearch, faSmile, faTimes, faTrophy } from "@fortawesome/free-solid-svg-icons";
+import { faAngleDown, faBars, faChartLine, faChevronLeft, faChevronRight, faCog, faDesktop, faDotCircle, faFlag, faHome, faLuggageCart, faMobileAlt, faMoneyBillWaveAlt, faPaperPlane, faPlay, faQuoteRight, faReply, faRetweet, faSearch, faSmile, faTimes, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
 
@@ -27,3 +27,5 @@ export const YoutubeIcon = (props) => <FontAwesomeIcon {...props} icon={faYoutub
 export const VimeoIcon = (props) => <FontAwesomeIcon {...props} icon={faVimeoV} />;
 export const SoundCloudIcon = (props) => <FontAwesomeIcon {...props} icon={faSoundcloud} />;
 export const TrendingIcon = (props) => <FontAwesomeIcon {...props} icon={faSuperpowers} />;
+export const TargetIcon = (props) => <FontAwesomeIcon {...props} icon={faDotCircle} />;
+export const DesktopIcon = (props) => <FontAwesomeIcon {...props} icon={faDesktop} />;

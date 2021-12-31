@@ -1,5 +1,5 @@
 import Layout from "components/layouts/layout-demo";
-import Service from "modules/demo/service";
+import Strategy from "modules/services/strategy";
 import DigitalExperience from "modules/about/digital-experience";
 import Counter from "modules/about/counter";
 import Slider from "modules/demo/slider";
@@ -8,9 +8,9 @@ import Portfolio from "modules/demo/portfolio";
 import BannerVideo from "modules/demo/banner-video";
 import Testimonials from "modules/about/testimonials";
 import Blog from "modules/demo/blog";
-import Sponser from "modules/about/sponser";
 import Contact from "modules/contact-us/contact";
 import Ads from "components/ads";
+import Marketing from "modules/services/marketing";
 
 /**
  * {@inheritdoc}
@@ -24,14 +24,14 @@ function MainDemo() {
             </Head>
             <Layout>
                 <Slider />
-                <Service />
+                <Strategy />
                 <DigitalExperience />
                 <Counter />
                 <Ads />
                 <Portfolio reverseColor />
                 <BannerVideo />
                 <Testimonials reverseColor />
-                <Sponser reverseColor />
+                <Marketing reverseColor />
                 <Ads />
                 <Blog />
                 <Contact reverseColor />

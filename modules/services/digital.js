@@ -1,12 +1,12 @@
 import Section from "components/layouts/section";
 import { Col, Container, Row } from "react-bootstrap";
-import ServiceItem from "./service-two-item";
-import { service_items } from "./items";
+import { digital_items } from "./items";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Pagination, EffectCards } from "swiper";
 import { useRef, useState } from "react";
-import ServicePagination from "./service-two-pagination";
+import DigitalPagination from "./digital-pagination";
 import SecHeader from "components/layouts/sec-header";
+import DigitalItem from "./digital-item";
 
 SwiperCore.use([Pagination, EffectCards]);
 
@@ -15,21 +15,21 @@ SwiperCore.use([Pagination, EffectCards]);
  * @param {object} props
  * @returns {React.Component}
  */
-function Service(props) {
+function Digital(props) {
     const paginationRef = useRef(0);
     const [paginationProps, setPaginationProps] = useState(null);
 
-    // loop for service_items to create ServiceItem
-    const serviceItems = service_items.map((item, index) => {
+    // loop for digital_items to create DigitalItem
+    const digitalItems = digital_items.map((item, index) => {
         return (
             <SwiperSlide key={index}>
-                <ServiceItem item={item} />
+                <DigitalItem item={item} />
             </SwiperSlide>
         );
     });
 
     /**
-     * change active class to Service Pagination
+     * change active class to digital Pagination
      * @param {object} swiper
      * @param {number} current
      */
@@ -43,16 +43,16 @@ function Service(props) {
                 {/* header */}
                 <SecHeader
                     header="we are digital agency"
-                    message="What we can do for you"
-                    layer="service"
+                    message="Our agency"
+                    layer="agency"
                 />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">
                     {/* Pagination */}
-                    <ServicePagination
+                    <DigitalPagination
                         ref={paginationRef}
-                        items={service_items}
+                        items={digital_items}
                         paginationProps={paginationProps}
                     />
                     {/* Pagination */}
@@ -85,7 +85,7 @@ function Service(props) {
                                     swiper.pagination.update();
                                 });
                             }}>
-                            {serviceItems}
+                            {digitalItems}
                         </Swiper>
                     </Col>
                     {/* Swiper */}
@@ -96,4 +96,4 @@ function Service(props) {
     );
 }
 
-export default Service;
+export default Digital;

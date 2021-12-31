@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 
 export const AwardItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
-        background: ${colors.neutral_500}10;
+        background: ${colors.tertiary};
         padding: 40px 20px;
         &:hover {
             ${THSpanStyled} {
@@ -40,7 +40,7 @@ export const H5styled = styled.h5`
 export const SpanStyled = styled.span`
     ${({ theme: { colors } }) => css`
         display: block;
-        background: ${colors.tertiary};
+        background: ${colors.main};
         width: fit-content;
         padding: 0 10px;
         margin-bottom: 10px;

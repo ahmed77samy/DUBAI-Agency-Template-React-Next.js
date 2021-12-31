@@ -7,7 +7,7 @@ import BannerVideo from "modules/demo/banner-video";
 import Blog from "modules/demo/blog";
 import Contact from "modules/contact-us/contact";
 import Portfolio from "modules/demo/portfolio-two";
-import Service from "modules/demo/service-two";
+import DigitalAgency from "modules/services/digital";
 import Slider from "modules/demo/slider-viemo";
 import Head from "next/head";
 import Ads from "components/ads";
@@ -24,7 +24,7 @@ function MainDemo4() {
             </Head>
             <Layout>
                 <Slider />
-                <Service />
+                <DigitalAgency />
                 <DigitalExperience />
                 <Counter />
                 <Ads />

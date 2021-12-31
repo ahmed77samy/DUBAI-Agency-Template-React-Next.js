@@ -1,6 +1,6 @@
 import styled, { css } from "styled-components";
 
-export const ServiceItemStyled = styled.div`
+export const DigitalItemStyled = styled.div`
     ${({ theme: { colors, breakpoints } }) => css`
         --foreground: ${colors.tertiary};
         --background: ${colors.main};

@@ -26,14 +26,18 @@ export const header_demo_items = [
         route: "/about",
         items: [
             {
-                name: "about 01",
+                name: "about us 01",
                 route: "/about/about-01",
             },
             {
-                name: "about 02",
+                name: "about us 02",
                 route: "/about/about-02",
             }
         ],
+    },
+    {
+        name: "Services",
+        route: "/services/services",
     },
     {
         name: "portfolio",

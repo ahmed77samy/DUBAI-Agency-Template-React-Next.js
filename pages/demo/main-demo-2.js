@@ -1,6 +1,5 @@
 import Ads from "components/ads";
 import Layout from "components/layouts/layout-demo";
-import Awards from "modules/about/awards";
 import OurTeam from "modules/about/our-team";
 import Subscrib from "modules/about/subscrib";
 import WhatAbout from "modules/about/what-about";
@@ -8,9 +7,10 @@ import BannerVideo from "modules/demo/banner-video-two";
 import Blog from "modules/demo/blog";
 import Map from "modules/contact-us/map";
 import Portfolio from "modules/demo/portfolio-two";
-import Service from "modules/demo/service-two";
+import DigitalAgency from "modules/services/digital";
 import Slider from "modules/demo/slider";
 import Head from "next/head";
+import Development from "modules/services/development";
 
 /**
  * {@inheritdoc}
@@ -24,14 +24,14 @@ function MainDemo2() {
             </Head>
             <Layout>
                 <Slider />
-                <Service />
+                <DigitalAgency />
                 <WhatAbout />
                 <Subscrib />
                 <Ads />
                 <Portfolio reverseColor />
                 <BannerVideo />
                 <OurTeam reverseColor />
-                <Awards reverseColor />
+                <Development reverseColor />
                 <Ads />
                 <Blog />
                 <Map reverseColor />

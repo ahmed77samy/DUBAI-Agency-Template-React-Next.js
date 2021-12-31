@@ -5,7 +5,7 @@ import {
     PaginationStyled,
     H3Styled,
     ContentStyled,
-} from "./styled/service-two-pagination-styled";
+} from "./styled/digital-pagination-styled";
 import PropTypes from "prop-types";
 
 /**
@@ -13,7 +13,7 @@ import PropTypes from "prop-types";
  * @param {object} props
  * @returns {React.Component}
  */
-const ServicePagination = React.forwardRef((props, ref) => {
+const DigitalPagination = React.forwardRef((props, ref) => {
     const [current, setCurrent] = useState(0);
     const { items, paginationProps } = props;
 
@@ -30,7 +30,7 @@ const ServicePagination = React.forwardRef((props, ref) => {
     }, [paginationProps]);
 
     // loop for items to create PaginationItem
-    const servicePaginationItems = items.map((item, index) => {
+    const digitalItems = items.map((item, index) => {
         return (
             <PaginationItemStyled
                 as={Col}
@@ -50,16 +50,16 @@ const ServicePagination = React.forwardRef((props, ref) => {
 
     return (
         <PaginationStyled as={Col} xs={12} ref={ref}>
-            <Row className="h-100 layout-space">{servicePaginationItems}</Row>
+            <Row className="h-100 layout-space">{digitalItems}</Row>
         </PaginationStyled>
     );
 });
 
-// ServicePagination PropTypes
-ServicePagination.propTypes = {
+// DigitalPagination PropTypes
+DigitalPagination.propTypes = {
     items: PropTypes.array.isRequired,
 };
 
-ServicePagination.displayName = "ServicePagination";
+DigitalPagination.displayName = "DigitalPagination";
 
-export default ServicePagination;
+export default DigitalPagination;
