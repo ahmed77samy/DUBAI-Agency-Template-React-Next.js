@@ -7,7 +7,7 @@ import Sponser from "modules/about/sponser";
 import SliderInnerPage from "components/slider-inner-page";
 import Ads from "components/ads";
 import Awards from "modules/about/awards";
-import Pricing from "modules/about/Pricing";
+import Pricing from "modules/about/pricing";
 import Development from "modules/services/development";
 
 /**

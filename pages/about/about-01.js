@@ -7,8 +7,8 @@ import Awards from "modules/about/awards";
 import SliderInnerPage from "components/slider-inner-page";
 import Ads from "components/ads";
 import Sponser from "modules/about/sponser";
-import Pricing from "modules/about/Pricing";
 import Marketing from "modules/services/marketing";
+import Pricing from "modules/about/pricing";
 
 /**
  * {@inheritdoc}
