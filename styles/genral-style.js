@@ -63,11 +63,11 @@ ${({ theme: { colors, variables } }) => css`
         }
 
         &::-webkit-scrollbar-thumb {
-            background: ${colors.neutral_500};
+            background: ${colors.primary};
         }
 
         &::-webkit-scrollbar-thumb:hover {
-            background: ${colors.neutral_400};
+            background: ${colors.primary_2};
         }
     }
     ${"" /* general styles */}
@@ -117,11 +117,14 @@ ${({ theme: { colors, variables } }) => css`
         color: ${colors.black};
         p,
         span {
-            color: ${colors.neutral_400};
+            color: ${colors.neutral};
         }
     }
     .opacity-0 {
         opacity: 0;
+    }
+    .text-body {
+        color: ${colors.text} !important;
     }
     .text-main {
         color: ${colors.main} !important;

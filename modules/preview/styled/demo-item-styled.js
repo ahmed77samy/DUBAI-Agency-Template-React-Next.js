@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const DemoItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
         position: relative;
-        background: ${colors.neutral_400};
+        background: ${colors.neutral}cc;
         border-radius: 4px;
         pointer-events: none;
         &:hover {
@@ -47,7 +47,6 @@ export const FigureStyled = styled.figure`
         pointer-events: none;
     }
 `;
-
 
 export const ContentStyled = styled.div`
     position: absolute;

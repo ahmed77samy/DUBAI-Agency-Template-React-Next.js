@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const WhatAboutItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
         position: relative;
-        background: ${colors.tertiary};
+        background: var(--background);
         padding: 20px 15px;
         margin-bottom: 1.5rem;
         &:last-of-type {

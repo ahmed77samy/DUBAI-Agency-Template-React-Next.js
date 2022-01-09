@@ -18,11 +18,10 @@ const DefaultButton = React.forwardRef((props, ref) => {
 // DefaultButton PropTypes
 DefaultButton.propTypes = {
     size: PropTypes.oneOf(["md", "sm", "lg"]).isRequired,
-    variant: PropTypes.oneOf(["light", "primary", "dark", "neutral"])
-        .isRequired,
+    variant: PropTypes.oneOf(["light", "primary", "neutral"]).isRequired,
     border: PropTypes.bool,
     borderRadius: PropTypes.bool,
-    square: PropTypes.bool,
+    square: PropTypes.bool
 };
 
 // DefaultButton defaultProps
@@ -31,9 +30,9 @@ DefaultButton.defaultProps = {
     variant: "light",
     border: false,
     borderRadius: false,
-    square: false,
+    square: false
 };
 
-DefaultButton.displayName = 'DefaultButton';
+DefaultButton.displayName = "DefaultButton";
 
 export default DefaultButton;

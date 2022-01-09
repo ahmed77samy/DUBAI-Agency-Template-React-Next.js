@@ -36,10 +36,6 @@ export const header_demo_items = [
         ],
     },
     {
-        name: "Services",
-        route: "/services/services",
-    },
-    {
         name: "portfolio",
         route: "/portfolio",
         items: [
@@ -88,11 +84,25 @@ export const header_demo_items = [
         ],
     },
     {
-        name: "contact us",
-        route: "/contact-us",
-    },
-    {
-        name: "404",
-        route: "/404",
+        name: "pages",
+        route: "/pages",
+        items: [
+            {
+                name: "services",
+                route: "/services/services",
+            },
+            {
+                name: "service details",
+                route: "/services/service-details",
+            },
+            {
+                name: "contact us",
+                route: "/contact-us",
+            },
+            {
+                name: "not Found 404",
+                route: "/404",
+            },
+        ],
     },
 ];

@@ -26,12 +26,7 @@ function Demos(props) {
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="demo pages ."
-                    message="17+ demo"
-                    layer="demos"
-                    align="center"
-                />
+                <SecHeader header="demo pages ." message="17+ demo" layer="demos" align="center" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">{DemoList}</Row>

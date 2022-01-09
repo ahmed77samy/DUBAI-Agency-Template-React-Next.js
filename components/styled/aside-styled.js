@@ -9,20 +9,18 @@ export const AsideStyled = styled.aside`
 `;
 
 export const AsideGroupStyled = styled.div`
-    ${({ theme: { colors }, border }) => css`
-        border: 1px solid ${colors.neutral_600}70;
-        border: ${border ? `1px solid ${colors.neutral_600}70` : "none"};
+    ${({ border }) => css`
+        border: 1px solid var(--border);
+        border: ${border ? `1px solid var(--border)` : "none"};
     `}
 `;
 
 export const AsideHeaderStyled = styled.h4`
-    ${({ theme: { colors } }) => css`
-        border-bottom: 1px solid ${colors.neutral_600}70;
-        margin: 0;
-        padding: 20px 15px;
-        text-transform: uppercase;
-        font-weight: 600;
-    `}
+    border-bottom: 1px solid var(--border);
+    margin: 0;
+    padding: 20px 15px;
+    text-transform: uppercase;
+    font-weight: 600;
 `;
 
 export const AsideContentStyled = styled.div`

@@ -1,16 +1,15 @@
 import Layout from "components/layouts/layout-demo";
 import DigitalExperience from "modules/about/digital-experience";
 import Awards from "modules/about/awards";
-import Testimonials from "modules/about/testimonials";
 import Counter from "modules/about/counter";
 import BannerVideo from "modules/demo/banner-video";
 import Blog from "modules/demo/blog";
 import Contact from "modules/contact-us/contact";
 import Portfolio from "modules/demo/portfolio-two";
-import DigitalAgency from "modules/services/digital";
 import Slider from "modules/demo/slider-youtube";
 import Head from "next/head";
 import Ads from "components/ads";
+import Development from "modules/services/development";
 
 /**
  * {@inheritdoc}
@@ -24,13 +23,12 @@ function MainDemo3() {
             </Head>
             <Layout>
                 <Slider />
-                <DigitalAgency />
+                <Development />
                 <DigitalExperience />
                 <Counter />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo />
-                <Testimonials reverseColor />
+                <BannerVideo reverseColor />
                 <Awards reverseColor />
                 <Ads />
                 <Blog />

@@ -21,7 +21,8 @@ function Blog() {
                     description="Creativity involves breaking out of expected & repeatable
                     patterns in order to look at things in different way than
                     ever before."
-                    bg="/img/blog/4.jpg">
+                    bg="/img/blog/4.jpg"
+                >
                     <Social className="mx-auto mt-4" url="/blog/blog-single" />
                 </SliderInnerPage>
                 <Ads />

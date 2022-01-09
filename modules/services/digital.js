@@ -41,20 +41,12 @@ function Digital(props) {
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="we are digital agency"
-                    message="Our agency"
-                    layer="agency"
-                />
+                <SecHeader header="we are digital agency" message="Our agency" layer="agency" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">
                     {/* Pagination */}
-                    <DigitalPagination
-                        ref={paginationRef}
-                        items={digital_items}
-                        paginationProps={paginationProps}
-                    />
+                    <DigitalPagination ref={paginationRef} items={digital_items} paginationProps={paginationProps} />
                     {/* Pagination */}
                     {/* Swiper */}
                     <Col xs={12}>
@@ -68,7 +60,7 @@ function Digital(props) {
                                 clickable: true,
                                 el: paginationRef.current,
                                 type: "custom",
-                                renderCustom: updateActive,
+                                renderCustom: updateActive
                             }}
                             /**
                              * Delay execution for the refs to be defined
@@ -77,14 +69,14 @@ function Digital(props) {
                              */
                             onSwiper={(swiper) => {
                                 setTimeout(() => {
-                                    swiper.params.pagination.el =
-                                        paginationRef.current;
+                                    swiper.params.pagination.el = paginationRef.current;
                                     swiper.pagination.destroy();
                                     swiper.pagination.init();
                                     swiper.pagination.render();
                                     swiper.pagination.update();
                                 });
-                            }}>
+                            }}
+                        >
                             {digitalItems}
                         </Swiper>
                     </Col>

@@ -1,4 +1,4 @@
-import { WhatAboutItemStyled , SpanStyled } from "./styled/what-about-item-styled";
+import { WhatAboutItemStyled, SpanStyled } from "./styled/what-about-item-styled";
 import PropTypes from "prop-types";
 
 /**
@@ -25,9 +25,9 @@ function WhatAboutItem(props) {
 WhatAboutItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
     }),
-    index: PropTypes.number.isRequired,
+    index: PropTypes.number.isRequired
 };
 
 export default WhatAboutItem;

@@ -2,7 +2,6 @@ import { faSoundcloud, faSuperpowers, faVimeoV, faYoutube } from "@fortawesome/f
 import { faAngleDown, faBars, faChartLine, faChevronLeft, faChevronRight, faCog, faDesktop, faDotCircle, faFlag, faHome, faLuggageCart, faMobileAlt, faMoneyBillWaveAlt, faPaperPlane, faPlay, faQuoteRight, faReply, faRetweet, faSearch, faSmile, faTimes, faTrophy } from "@fortawesome/free-solid-svg-icons";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 
-
 export const BarsIcon = (props) => <FontAwesomeIcon {...props} icon={faBars} />;
 export const TimesIcon = (props) => <FontAwesomeIcon {...props} icon={faTimes} />;
 export const AngleDownIcon = (props) => <FontAwesomeIcon {...props} icon={faAngleDown} />;

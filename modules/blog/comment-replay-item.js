@@ -28,8 +28,8 @@ CommentReplayItem.propTypes = {
         img: PropTypes.string.isRequired,
         date: PropTypes.string.isRequired,
         comment: PropTypes.string.isRequired,
-        replies: PropTypes.array.isRequired,
-    }),
+        replies: PropTypes.array.isRequired
+    })
 };
 
 export default CommentReplayItem;

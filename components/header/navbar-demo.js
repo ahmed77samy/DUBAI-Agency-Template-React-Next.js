@@ -12,7 +12,7 @@ import { NavbarStyled, UlStyled } from "./styled/navbar-demo-styled";
 function Navbar(props) {
     // map on header_demo_items to create ListItemsDemo or ListItemsDropDemo
     const ulItems = header_demo_items.map((item, index) => {
-        return item.items ? (<ListItemsDropDemo item={item} key={index} />) : (<ListItemsDemo item={item} key={index} />);
+        return item.items ? <ListItemsDropDemo item={item} key={index} /> : <ListItemsDemo item={item} key={index} />;
     });
 
     return (
@@ -24,12 +24,12 @@ function Navbar(props) {
 
 // Navbar PropTypes
 Navbar.propTypes = {
-    open: PropTypes.bool.isRequired,
+    open: PropTypes.bool.isRequired
 };
 
 // Navbar defaultProps
 Navbar.defaultProps = {
-    open: false,
+    open: false
 };
 
 export default Navbar;

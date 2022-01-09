@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const StrategyItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
-        border: 1px solid ${colors.neutral_700}70;
+        border: 1px solid var(--border);
         padding: 20px;
         height: 100%;
         &:hover {
@@ -22,9 +22,7 @@ export const HeaderStyled = styled.div`
 `;
 
 export const HrStyled = styled.hr`
-    ${({ theme: { colors } }) => css`
-        border-color: ${colors.neutral_700}50;
-    `}
+    border-color: var(--border);
 `;
 
 export const H5Styled = styled.h5`

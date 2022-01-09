@@ -22,7 +22,7 @@ function Portfolio() {
                     ever before."
                 />
                 <Ads />
-                <PortfolioFullscreenWrapper />
+                <PortfolioFullscreenWrapper reverseColor />
             </Layout>
         </div>
     );

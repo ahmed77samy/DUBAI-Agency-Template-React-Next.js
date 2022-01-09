@@ -23,21 +23,13 @@ export const ThreeLinesStyled = styled.div`
             ? css`
                   flex-direction: row;
                   transform: skewX(-35deg);
-                  transform-origin: ${x === "left"
-                      ? "bottom"
-                      : x === "center"
-                      ? "center"
-                      : x === "right" && "top"};
+                  transform-origin: ${x === "left" ? "bottom" : x === "center" ? "center" : x === "right" && "top"};
               `
             : direction === "column" &&
               css`
                   flex-direction: column;
                   transform: skewY(-35deg);
-                  transform-origin: ${y === "top"
-                      ? "right"
-                      : y === "center"
-                      ? "center"
-                      : y === "bottom" && "left"};
+                  transform-origin: ${y === "top" ? "right" : y === "center" ? "center" : y === "bottom" && "left"};
               `}
         ${x === "left"
             ? css`
@@ -46,13 +38,7 @@ export const ThreeLinesStyled = styled.div`
             : x === "center"
             ? css`
                   left: 50%;
-                  transform: ${direction === "row"
-                      ? y === "center"
-                          ? "translate(-50%, -50%) skewX(-35deg)"
-                          : "translateX(-50%) skewX(-35deg)"
-                      : y === "center"
-                      ? "translate(-50%, -50%) skewY(-35deg)"
-                      : "translateX(-50%) skewY(-35deg)"};
+                  transform: ${direction === "row" ? (y === "center" ? "translate(-50%, -50%) skewX(-35deg)" : "translateX(-50%) skewX(-35deg)") : y === "center" ? "translate(-50%, -50%) skewY(-35deg)" : "translateX(-50%) skewY(-35deg)"};
               `
             : x === "right" &&
               css`
@@ -65,13 +51,7 @@ export const ThreeLinesStyled = styled.div`
             : y === "center"
             ? css`
                   top: 50%;
-                  transform: ${direction === "row"
-                      ? x === "center"
-                          ? "translate(-50%, -50%) skewX(-35deg)"
-                          : "translateY(-50%) skewX(-35deg)"
-                      : x === "center"
-                      ? "translate(-50%, -50%) skewY(-35deg)"
-                      : "translateY(-50%) skewY(-35deg)"};
+                  transform: ${direction === "row" ? (x === "center" ? "translate(-50%, -50%) skewX(-35deg)" : "translateY(-50%) skewX(-35deg)") : x === "center" ? "translate(-50%, -50%) skewY(-35deg)" : "translateY(-50%) skewY(-35deg)"};
               `
             : y === "bottom" &&
               css`
@@ -81,7 +61,18 @@ export const ThreeLinesStyled = styled.div`
 `;
 
 export const SpanStyled = styled.span`
-    ${({ theme: { colors } }) => css`
-        background: ${colors.white};
+    ${({ theme: { colors }, variant }) => css`
+        ${variant === "light"
+            ? css`
+                  background: ${colors.white};
+              `
+            : variant === "primary"
+            ? css`
+                  background: ${colors.primary};
+              `
+            : variant === "neutral" &&
+              css`
+                  background: ${colors.neutral};
+              `}
     `}
 `;

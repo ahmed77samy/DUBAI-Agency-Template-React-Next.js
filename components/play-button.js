@@ -2,7 +2,7 @@ import React from "react";
 import { PlayIcon } from "./core/icons";
 import DefaultButton from "./default-button";
 import { PlayButtonStyled } from "./styled/play-button-styled";
-import PropTypes from "prop-types"
+import PropTypes from "prop-types";
 
 /**
  * {@inheritdoc}
@@ -20,8 +20,8 @@ const PlayButton = React.forwardRef((props, ref) => {
 // PlayButton PropTypes
 PlayButton.propTypes = {
     icon: PropTypes.func
-}
+};
 
-PlayButton.displayName = 'PlayButton';
+PlayButton.displayName = "PlayButton";
 
 export default PlayButton;

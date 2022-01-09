@@ -13,11 +13,7 @@ import { CommentsStyled } from "./styled/single-comments-styled";
 function SingleComments(props) {
     const commentsItems = comments_items.map((item, index) => {
         const { replies } = item;
-        return replies ? (
-            <CommentReplayItem key={index} item={item} />
-        ) : (
-            <CommentItem key={index} item={item} />
-        );
+        return replies ? <CommentReplayItem key={index} item={item} /> : <CommentItem key={index} item={item} />;
     });
 
     return (

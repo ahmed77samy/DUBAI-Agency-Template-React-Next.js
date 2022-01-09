@@ -16,24 +16,9 @@ function SingleCommentForm() {
             <SecHeader header="leave comment" message="type message" />
             {/* header */}
             {/* content */}
-            <DefaultInput
-                required
-                type="text"
-                size="sm"
-                placeholder="Your Name *"
-            />
-            <DefaultInput
-                required
-                type="email"
-                size="sm"
-                placeholder="Your Email Address *"
-            />
-            <DefaultInput
-                required
-                as="textarea"
-                size="sm"
-                placeholder="Type Your Comment Here *"
-            />
+            <DefaultInput required type="text" size="sm" placeholder="Your Name *" />
+            <DefaultInput required type="email" size="sm" placeholder="Your Email Address *" />
+            <DefaultInput required as="textarea" size="sm" placeholder="Type Your Comment Here *" />
             <DefaultButton border size="sm">
                 <SendIcon className="mr-3" />
                 send message

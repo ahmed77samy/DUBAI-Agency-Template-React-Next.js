@@ -1,11 +1,9 @@
-import styled, { css } from "styled-components";
+import styled from "styled-components";
 
 export const FactItemStyled = styled.div`
-    ${({ theme: { colors } }) => css`
-        background: ${colors.tertiary};
-        text-align: center;
-        padding: 20px;
-    `}
+    background: var(--background);
+    text-align: center;
+    padding: 20px;
 `;
 
 export const IconStyled = styled.i`

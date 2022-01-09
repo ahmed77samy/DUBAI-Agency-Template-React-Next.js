@@ -1,7 +1,4 @@
-import {
-    SocialStyled,
-    ShareStyled,
-} from "components/styled/social-styled";
+import { SocialStyled, ShareStyled } from "components/styled/social-styled";
 import { SpanStyled } from "components/styled/three-lines-styled";
 import styled, { css } from "styled-components";
 
@@ -26,26 +23,23 @@ export const HeaderStyled = styled.div`
 `;
 
 export const SideLeftStyled = styled.div`
-    ${({ theme: { colors } }) => css`
-        position: relative;
-        width: 45px;
-        flex-shrink: 0;
-        overflow: hidden;
-        ${SpanStyled} {
-            transition: 0.3s;
-            background: ${colors.text};
+    position: relative;
+    width: 45px;
+    flex-shrink: 0;
+    overflow: hidden;
+    ${SpanStyled} {
+        transition: 0.3s;
+    }
+    ${SocialStyled} {
+        position: absolute;
+        left: 0;
+        top: 0;
+        ${ShareStyled} {
+            width: 33px;
+            height: 33px;
+            font-size: 12px;
         }
-        ${SocialStyled} {
-            position: absolute;
-            left: 0;
-            top: 0;
-            ${ShareStyled} {
-                width: 33px;
-                height: 33px;
-                font-size: 12px;
-            }
-        }
-    `}
+    }
 `;
 
 export const ImgStyled = styled.img`
@@ -63,7 +57,7 @@ export const ContentStyled = styled.div`
 
 export const H5Styled = styled.h5`
     ${({ theme: { colors } }) => css`
-        color: ${colors.white};
+        color: var(--maincolor);
         transition: 0.3s;
         &:hover {
             color: ${colors.primary};

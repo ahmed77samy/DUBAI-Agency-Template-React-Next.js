@@ -1,9 +1,4 @@
-import {
-    SliderStyled,
-    ControlStyled,
-    PrevButtonStyled,
-    NextButtonStyled,
-} from "./styled/slider-styled";
+import { SliderStyled, ControlStyled, PrevButtonStyled, NextButtonStyled } from "./styled/slider-styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, Navigation, Parallax, Pagination } from "swiper";
 import { slider_demo_items } from "./items";
@@ -27,20 +22,14 @@ function Slider(props) {
 
     // loop for slider_demo_items to create SliderItem
     const slideItems = slider_demo_items.map((item, index) => {
-        return (
-            <SwiperSlide key={index}>
-                {(PropsSlide) => (
-                    <SliderItem item={item} index={index} PropsSlide={PropsSlide} />
-                )}
-            </SwiperSlide>
-        );
+        return <SwiperSlide key={index}>{(PropsSlide) => <SliderItem item={item} index={index} PropsSlide={PropsSlide} />}</SwiperSlide>;
     });
 
     // set pagination Props to swiper props
     const updateActive = (swiper) => {
         setPaginationProps({
             current: swiper.activeIndex + 1,
-            total: swiper.slides.length,
+            total: swiper.slides.length
         });
     };
 
@@ -55,17 +44,17 @@ function Slider(props) {
                 grabCursor
                 autoplay={{
                     delay: 10000,
-                    disableOnInteraction: false,
+                    disableOnInteraction: false
                 }}
                 navigation={{
                     disabledClass: "disabled",
                     prevEl: prevRef.current,
-                    nextEl: nextRef.current,
+                    nextEl: nextRef.current
                 }}
                 pagination={{
                     clickable: true,
                     el: paginationRef.current,
-                    type: "progressbar",
+                    type: "progressbar"
                 }}
                 onActiveIndexChange={updateActive}
                 /**
@@ -87,27 +76,20 @@ function Slider(props) {
                         swiper.pagination.update();
                         updateActive(swiper);
                     });
-                }}>
+                }}
+            >
                 {slideItems}
                 {/* control */}
                 <ControlStyled>
                     <PrevButtonStyled ref={prevRef}>
                         <ArrowLeftIcon className="mr-lg-3" />
-                        <span className="font-small d-none d-lg-block text-white">
-                            Prev Slide
-                        </span>
+                        <span className="font-small d-none d-lg-block text-white">Prev Slide</span>
                     </PrevButtonStyled>
                     <NextButtonStyled ref={nextRef}>
-                        <span className="font-small d-none d-lg-block text-white">
-                            Next Slide
-                        </span>
+                        <span className="font-small d-none d-lg-block text-white">Next Slide</span>
                         <ArrowRightIcon className="ml-lg-3" />
                     </NextButtonStyled>
-                    <SliderPagination
-                        ref={paginationRef}
-                        paginationProps={paginationProps}
-                        className="d-none d-sm-flex"
-                    />
+                    <SliderPagination ref={paginationRef} paginationProps={paginationProps} className="d-none d-sm-flex" />
                 </ControlStyled>
                 {/* control */}
             </Swiper>

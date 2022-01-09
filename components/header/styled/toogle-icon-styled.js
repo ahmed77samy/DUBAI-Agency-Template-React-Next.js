@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const ToogleIconStyled = styled.div`
     ${({ theme: { colors } }) => css`
-        border: 1px solid ${colors.neutral_700};
+        border: 1px solid ${colors.primary};
         width: 45px;
         height: 45px;
         display: flex;
@@ -12,7 +12,7 @@ export const ToogleIconStyled = styled.div`
         cursor: pointer;
         transition: 0.3s;
         &:hover {
-            background-color: ${colors.neutral_700};
+            background-color: ${colors.primary};
             border-color: transparent;
         }
         .icon {

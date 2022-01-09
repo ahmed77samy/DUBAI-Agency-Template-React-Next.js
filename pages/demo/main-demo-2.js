@@ -7,10 +7,9 @@ import BannerVideo from "modules/demo/banner-video-two";
 import Blog from "modules/demo/blog";
 import Map from "modules/contact-us/map";
 import Portfolio from "modules/demo/portfolio-two";
-import DigitalAgency from "modules/services/digital";
+import Digital from "modules/services/digital";
 import Slider from "modules/demo/slider";
 import Head from "next/head";
-import Development from "modules/services/development";
 
 /**
  * {@inheritdoc}
@@ -24,14 +23,13 @@ function MainDemo2() {
             </Head>
             <Layout>
                 <Slider />
-                <DigitalAgency />
+                <Digital />
                 <WhatAbout />
                 <Subscrib />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo />
+                <BannerVideo reverseColor />
                 <OurTeam reverseColor />
-                <Development reverseColor />
                 <Ads />
                 <Blog />
                 <Map reverseColor />

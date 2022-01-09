@@ -4,7 +4,7 @@ export const DevelopmentItemStyled = styled.div`
     ${({ theme: { colors, breakpoints } }) => css`
         position: relative;
         text-align: center;
-        border: 1px solid ${colors.neutral_700}70;
+        border: 1px solid var(--border);
         padding: 20px 15px;
         ${breakpoints.lg} {
             padding: 30px 20px;

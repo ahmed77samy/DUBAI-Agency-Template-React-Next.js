@@ -15,11 +15,7 @@ function Blog(props) {
     // loop for latest_blog_items to create BlogItem
     const blogItems = latest_blog_items.map((item, index) => {
         return (
-            <Col
-                xs={12}
-                md={index + 1 === latest_blog_items.length ? 12 : 6}
-                lg={4}
-                key={index}>
+            <Col xs={12} md={index + 1 === latest_blog_items.length ? 12 : 6} lg={4} key={index}>
                 <BlogItem item={item} index={index} />
             </Col>
         );
@@ -29,21 +25,14 @@ function Blog(props) {
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="recently blogs"
-                    message="What's going on around us"
-                    layer="blog"
-                />
+                <SecHeader header="recently blogs" message="What's going on around us" layer="blog" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">
                     {blogItems}
                     <Col xs={12}>
                         <Link href="/blog/blog-grid" passHref>
-                            <DefaultButton
-                                border
-                                className="a-reset d-flex w-fit-content mx-auto"
-                                as="a">
+                            <DefaultButton variant="light" border className="a-reset d-flex w-fit-content mx-auto" as="a">
                                 show more
                             </DefaultButton>
                         </Link>

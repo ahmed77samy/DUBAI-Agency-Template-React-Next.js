@@ -22,7 +22,7 @@ function Portfolio() {
                     ever before."
                 />
                 <Ads />
-                <PortfolioListWrapper />
+                <PortfolioListWrapper reverseColor />
             </Layout>
         </div>
     );

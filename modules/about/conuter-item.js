@@ -1,9 +1,5 @@
 import { useCallback, useEffect, useRef, useState } from "react";
-import {
-    ConuterItemStyled,
-    H2Styled,
-    H6Styled,
-} from "./styled/counter-item-styled.js";
+import { ConuterItemStyled, H2Styled, H6Styled } from "./styled/counter-item-styled.js";
 import PropTypes from "prop-types";
 import KUTE from "kute.js";
 
@@ -48,7 +44,7 @@ function ConuterItem(props) {
 ConuterItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        number: PropTypes.number.isRequired,
+        number: PropTypes.number.isRequired
     })
 };
 

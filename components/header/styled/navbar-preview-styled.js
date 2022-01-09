@@ -5,7 +5,7 @@ export const NavbarStyled = styled.nav`
         display: block;
         position: fixed;
         width: 100%;
-        background-color: ${colors.neutral_900};
+        background-color: var(--foreground);
         height: calc(100% - ${variables.headerHeight});
         right: auto;
         left: 100%;

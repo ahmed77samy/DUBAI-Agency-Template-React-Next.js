@@ -1,10 +1,8 @@
 import styled, { css } from "styled-components";
 
 export const DigitalItemStyled = styled.div`
-    ${({ theme: { colors, breakpoints } }) => css`
-        --foreground: ${colors.tertiary};
-        --background: ${colors.main};
-        background: var(--foreground);
+    ${({ theme: { breakpoints } }) => css`
+        background: var(--background);
         padding: 50px 15px;
         ${breakpoints.md} {
             padding: 80px 30px;

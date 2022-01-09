@@ -25,22 +25,14 @@ function Portfolio(props) {
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="latest porfolio"
-                    message="amazing works"
-                    layer="portfolio"
-                    align="center"
-                />
+                <SecHeader header="latest porfolio" message="amazing works" layer="portfolio" align="center" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">
                     {portfolioItems}
                     <Col xs={12}>
                         <Link href="/portfolio/portfolio-grid" passHref>
-                            <DefaultButton
-                                className="a-reset d-flex w-fit-content mx-auto"
-                                as="a"
-                                border>
+                            <DefaultButton className="a-reset d-flex w-fit-content mx-auto" as="a" border>
                                 show more
                             </DefaultButton>
                         </Link>

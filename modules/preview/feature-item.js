@@ -15,14 +15,7 @@ function FeatureItem(props) {
     return (
         <FeatureItemStyled {...props}>
             <FigureStyled>
-                <Image
-                    src={img}
-                    alt="feat"
-                    width={40}
-                    height={40}
-                    placeholder="blur"
-                    blurDataURL="/img/bg/loading.WebP"
-                />
+                <Image src={img} alt="feat" width={40} height={40} placeholder="blur" blurDataURL="/img/bg/loading.WebP" />
             </FigureStyled>
             <div>
                 <h6 className="text-uppercase font-600">{name}</h6>
@@ -37,8 +30,8 @@ FeatureItem.propTypes = {
     item: PropTypes.shape({
         name: PropTypes.string.isRequired,
         img: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
-    }),
+        description: PropTypes.string.isRequired
+    })
 };
 
 export default FeatureItem;

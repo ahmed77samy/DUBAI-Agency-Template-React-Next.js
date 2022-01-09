@@ -4,11 +4,7 @@ import Section from "components/layouts/section";
 import ThreeLines from "components/three-lines";
 import Image from "next/image";
 import { Container } from "react-bootstrap";
-import {
-    BannerVideoStyled,
-    WrapperPlayStyled,
-    WrapperStyled,
-} from "./styled/banner-video-styled";
+import { BannerVideoStyled, WrapperPlayStyled, WrapperStyled } from "./styled/banner-video-styled";
 import { useState } from "react";
 import Overlay from "components/overlay";
 import DefaultModal from "components/modal";
@@ -27,7 +23,7 @@ function BannerVideo(props) {
         playing: false,
         loop: false,
         width: "100%",
-        height: "calc(100vh - 3.5rem - 75px - 50px)",
+        height: "calc(100vh - 3.5rem - 75px - 50px)"
     });
 
     // toggle the toggler state
@@ -36,53 +32,21 @@ function BannerVideo(props) {
     return (
         <BannerVideoStyled {...props} as={Section}>
             {/* Image */}
-            <Image
-                src="/img/bg/6.png"
-                alt="banner-video"
-                layout="fill"
-                objectFit="cover"
-                placeholder="blur"
-                blurDataURL="/img/bg/loading.WebP"
-            />
+            <Image src="/img/bg/6.png" alt="banner-video" layout="fill" objectFit="cover" placeholder="blur" blurDataURL="/img/bg/loading.WebP" />
             {/* Image */}
             <Overlay />
             {/* content */}
             <Container className="p-0 position-relative">
                 <WrapperStyled>
-                    <SecHeader
-                        header="How is your visual identity?"
-                        message="view by eyes"
-                        layer="video"
-                    />
-                    <p className="d-none d-md-block">
-                        A system that young people around the world with a club
-                        culture and techno enthusiasts feel identified. We
-                        generated a simple logo that is the basis for generating
-                        a geometric and liquid system.
-                    </p>
-                    <p className="mb-5 d-none d-md-block">
-                        A system that young people around the world with a club
-                        culture and techno enthusiasts feel identified..
-                    </p>
+                    <SecHeader header="How is your visual identity?" message="view by eyes" layer="video" />
+                    <p className="d-none d-md-block">A system that young people around the world with a club culture and techno enthusiasts feel identified. We generated a simple logo that is the basis for generating a geometric and liquid system.</p>
+                    <p className="mb-5 d-none d-md-block">A system that young people around the world with a club culture and techno enthusiasts feel identified..</p>
                     <WrapperPlayStyled>
-                        <ThreeLines
-                            x="left"
-                            y="center"
-                            className="d-none d-sm-flex"
-                        />
-                        <PlayButton
-                            variant="primary"
-                            className="ml-sm-auto"
-                            onClick={toggle}
-                        />
+                        <ThreeLines x="left" y="center" className="d-none d-sm-flex" />
+                        <PlayButton variant="primary" className="ml-sm-auto" onClick={toggle} />
                     </WrapperPlayStyled>
                     {/* Modal */}
-                    <DefaultModal
-                        centered
-                        size="xl"
-                        show={toggler}
-                        dialogClassName="w-90"
-                        onHide={toggle}>
+                    <DefaultModal centered size="xl" show={toggler} dialogClassName="w-90" onHide={toggle}>
                         <DefaultModal.Header />
                         <DefaultModal.Body>
                             <ReactPlayer {...player} />

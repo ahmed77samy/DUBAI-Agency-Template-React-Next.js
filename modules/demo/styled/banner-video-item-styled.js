@@ -1,34 +1,28 @@
 import { OverlayStyled } from "components/styled/overlay-styled";
 import styled, { css } from "styled-components";
 
-
-export const PlayButtonStyled = styled.button`
-    ${({ theme: { colors } }) => css`
-        &:after {
-            background: ${colors.main};
+export const BannerVideoItemStyled = styled.div`
+    ${() => css`
+        position: relative;
+        cursor: pointer;
+        img {
+            border-radius: 3px;
+        }
+        ${OverlayStyled} {
+            z-index: 2;
             transition: 0.3s;
+        }
+        &:hover {
+            ${OverlayStyled} {
+                background: #00000099;
+            }
         }
     `}
 `;
 
-export const BannerVideoItemStyled = styled.div`
-    position: relative;
-    cursor: pointer;
-    img {
-        border-radius: 3px;
-    }
-    ${OverlayStyled} {
-        z-index: 2;
+export const PlayButtonStyled = styled.button`
+    &:after {
+        background: var(--background);
         transition: 0.3s;
-    }
-    &:hover {
-        ${OverlayStyled} {
-            background: #00000099;
-        }
-        ${PlayButtonStyled} {
-            &:after {
-                opacity: 1;
-            }
-        }
     }
 `;

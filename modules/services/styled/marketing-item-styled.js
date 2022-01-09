@@ -2,7 +2,7 @@ import styled, { css } from "styled-components";
 
 export const MarketingItemStyled = styled.div`
     ${({ theme: { colors, breakpoints }, increase }) => css`
-        border: 1px solid ${colors.neutral_700}70;
+        border: 1px solid var(--border);
         padding: 20px 15px;
         text-align: center;
         display: flex;

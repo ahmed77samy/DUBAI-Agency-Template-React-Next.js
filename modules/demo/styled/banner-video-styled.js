@@ -1,7 +1,4 @@
-import {
-    WrapperStyled as SecHeaderWrapperStyled,
-    ContentStyled,
-} from "components/layouts/styled/sec-header-styled";
+import { WrapperStyled as SecHeaderWrapperStyled, ContentStyled } from "components/layouts/styled/sec-header-styled";
 import styled, { css } from "styled-components";
 
 export const BannerVideoStyled = styled.div`
@@ -17,10 +14,10 @@ export const BannerVideoStyled = styled.div`
 `;
 
 export const WrapperStyled = styled.div`
-    ${({ theme: { colors, breakpoints, variables } }) => css`
+    ${({ theme: { breakpoints, variables } }) => css`
         max-width: 700px;
         padding: ${variables.mainPadding} 15px;
-        background: ${colors.tertiary}df;
+        background: var(--background);
         margin: auto;
         ${breakpoints.sm} {
             padding: ${variables.mainPadding} 30px;

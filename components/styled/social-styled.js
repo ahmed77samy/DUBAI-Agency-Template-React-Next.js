@@ -3,63 +3,48 @@ import styled, { css } from "styled-components";
 export const SocialStyled = styled.div`
     ${({ theme: { colors }, direction, type }) => css`
         display: flex;
-        flex-direction: ${direction === "row"
-            ? `row`
-            : direction === "column" && `column`};
+        flex-direction: ${direction === "row" ? `row` : direction === "column" && `column`};
         gap: 10px;
         width: max-content;
         ${LinkStyled} {
             &:hover {
-                color: var(--color);
+                color: var(--maincolor);
                 ${type === "light"
                     ? css`
-                          --background: ${colors.white};
+                          background: ${colors.white};
                           --border: transparent;
-                          --color: ${colors.black};
-                      `
-                    : type === "dark"
-                    ? css`
-                          --background: ${colors.black};
-                          --border: transparent;
-                          --color: ${colors.white};
+                          --maincolor: ${colors.black};
                       `
                     : type === "primary"
                     ? css`
-                          --background: ${colors.primary};
+                          background: ${colors.primary};
                           --border: transparent;
-                          --color: ${colors.white};
+                          --maincolor: ${colors.white};
                       `
                     : type === "neutral" &&
                       css`
-                          --background: ${colors.neutral_400}50;
+                          background: var(--background);
                           --border: transparent;
-                          --color: ${colors.white};
+                          --maincolor: var(--maincolor);
                       `}
             }
         }
     `}
 `;
 export const LinkStyled = styled.a`
-    ${({ theme: { colors } }) => css`
-        --background: transparent;
-        --border: ${colors.neutral_600}70;
-        --color: ${colors.white};
-        background: var(--background);
-        border: 1px solid var(--border);
-        transition: 0.3s;
-        color: var(--color);
-    `}
+    background: transparent;
+    border: 1px solid var(--border);
+    transition: 0.3s;
+    color: var(--maincolor);
 `;
 
 export const ShareStyled = styled.span`
-    ${({ theme: { colors } }) => css`
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        width: 40px;
-        height: 40px;
-        color: inherit;
-        text-transform: uppercase;
-        font-weight: 600;
-    `}
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    color: inherit;
+    text-transform: uppercase;
+    font-weight: 600;
 `;

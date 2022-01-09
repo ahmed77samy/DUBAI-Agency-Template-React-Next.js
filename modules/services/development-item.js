@@ -1,4 +1,4 @@
-import { DevelopmentItemStyled , H5Styled } from "./styled/development-item-styled.js";
+import { DevelopmentItemStyled, H5Styled } from "./styled/development-item-styled.js";
 import PropTypes from "prop-types";
 
 /**
@@ -20,9 +20,9 @@ function DevelopmentItem(props) {
 DevelopmentItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
-        description: PropTypes.string.isRequired,
+        description: PropTypes.string.isRequired
     }),
-    index: PropTypes.number.isRequired,
+    index: PropTypes.number.isRequired
 };
 
 export default DevelopmentItem;

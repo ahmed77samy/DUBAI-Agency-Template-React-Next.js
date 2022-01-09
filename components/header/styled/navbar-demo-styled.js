@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const NavbarStyled = styled.nav`
-    ${({ theme: { colors, variables, breakpoints }, open }) => css`
+    ${({ theme: { variables, breakpoints }, open }) => css`
         display: block;
         position: fixed;
         top: ${variables.headerHeight};
@@ -9,7 +9,7 @@ export const NavbarStyled = styled.nav`
         left: 100%;
         width: 100%;
         height: calc(100% - ${variables.headerHeight});
-        background-color: ${colors.neutral_900};
+        background-color: var(--foreground);
         transition: transform 0.3s;
         padding-bottom: 15px;
         overflow: auto;
@@ -109,7 +109,7 @@ export const DropDownStyled = styled.ul`
         flex-direction: column;
         row-gap: 5px;
         width: 100%;
-        background: ${colors.neutral_900};
+        background: var(--foreground);
         padding: 10px 0;
         padding-left: 25px;
         ${breakpoints.lg} {
@@ -122,7 +122,8 @@ export const DropDownStyled = styled.ul`
             padding-left: 0;
             opacity: 0;
             pointer-events: none;
-            &:after {
+            &:after,
+            &:before {
                 content: "";
                 position: absolute;
                 top: 0;
@@ -131,6 +132,10 @@ export const DropDownStyled = styled.ul`
                 width: 100%;
                 pointer-events: none;
                 background: ${colors.primary};
+            }
+            &:before {
+                top: auto;
+                bottom: 0;
             }
         }
         ${LinkStyled} {

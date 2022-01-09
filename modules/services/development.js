@@ -23,10 +23,7 @@ function Development(props) {
         <Section {...props} padding>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="Business development"
-                    message="Our development"
-                />
+                <SecHeader header="Business development" message="Our development" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space align-items-center">{developmentItems}</Row>

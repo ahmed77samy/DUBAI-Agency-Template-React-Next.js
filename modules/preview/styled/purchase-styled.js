@@ -4,7 +4,7 @@ export const FigureStyled = styled.figure`
     ${({ theme: { colors, breakpoints, variables } }) => css`
         position: relative;
         margin-bottom: ${variables.mainPadding};
-        background: ${colors.neutral_300};
+        background: ${colors.white};
         img {
             min-height: 500px;
             object-fit: cover;

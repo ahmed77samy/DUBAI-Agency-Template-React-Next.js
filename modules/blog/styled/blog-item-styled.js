@@ -32,7 +32,6 @@ export const SideTopStyled = styled.div`
         overflow: hidden;
         ${SpanStyled} {
             transition: 0.3s;
-            background: ${colors.text};
         }
         &:before {
             content: attr(data-title);
@@ -42,7 +41,7 @@ export const SideTopStyled = styled.div`
             font-weight: 600;
             text-transform: uppercase;
             transition: 0.3s;
-            color: ${colors.text};
+            color: ${colors.neutral};
         }
     `}
 `;
@@ -62,7 +61,7 @@ export const ContentStyled = styled.div`
 
 export const H5Styled = styled.h5`
     ${({ theme: { colors } }) => css`
-        color: ${colors.white};
+        color: var(--maincolor);
         transition: 0.3s;
         &:hover {
             color: ${colors.primary};

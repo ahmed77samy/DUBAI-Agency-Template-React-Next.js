@@ -1,13 +1,11 @@
 import styled, { css } from "styled-components";
 
 export const ConuterItemStyled = styled.div`
-    ${({ theme: { colors } }) => css`
-        background: var(--background);
-        padding: 20px;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    `}
+    background: var(--background);
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 `;
 
 export const H2Styled = styled.h2`
@@ -17,7 +15,7 @@ export const H2Styled = styled.h2`
             font-size: 4em;
         }
         &:after {
-            content: "+"
+            content: "+";
         }
     `}
 `;

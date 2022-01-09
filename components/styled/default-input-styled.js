@@ -2,10 +2,10 @@ import styled, { css } from "styled-components";
 
 export const DefaultInputStyled = styled.input`
     ${({ theme: { colors, sizes }, size, border, as }) => css`
-        border: ${border ? `1px solid ${colors.neutral_600}50` : "none"};
+        border: ${border ? `1px solid var(--border)` : "none"};
         outline: none;
-        background: ${border ? "transparent" : `${colors.neutral_600}50`};
-        color: ${colors.white};
+        background: ${border ? "transparent" : `var(--background)`};
+        color: var(--maincolor);
         padding: 0 15px;
         transition: 0.3s;
         ${size === "sm"

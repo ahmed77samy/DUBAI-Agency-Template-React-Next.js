@@ -4,7 +4,11 @@ import { SpanStyled } from "./three-lines-styled";
 
 export const ModalStyled = styled(Modal)`
     ${({ theme: { colors, breakpoints } }) => css`
-        background: ${colors.neutral_700}60;
+        --foreground: ${colors.main};
+        --background: ${colors.tertiary};
+        --border: ${colors.neutral}20;
+        --maincolor: ${colors.white};
+        background: ${colors.neutral}50;
         .modal-content {
             background: ${colors.main};
             border-radius: 3px;
@@ -26,7 +30,7 @@ export const ModalHeaderStyled = styled(Modal.Header)`
         position: relative;
         padding: 25px 0;
         margin: 0 15px;
-        border-color: ${colors.neutral_700}60;
+        border-color: var(--border);
         &:before {
             content: attr(data-title);
             transform: translateX(50px);

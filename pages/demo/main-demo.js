@@ -10,7 +10,6 @@ import Testimonials from "modules/about/testimonials";
 import Blog from "modules/demo/blog";
 import Contact from "modules/contact-us/contact";
 import Ads from "components/ads";
-import Marketing from "modules/services/marketing";
 
 /**
  * {@inheritdoc}
@@ -29,9 +28,8 @@ function MainDemo() {
                 <Counter />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo />
+                <BannerVideo reverseColor />
                 <Testimonials reverseColor />
-                <Marketing reverseColor />
                 <Ads />
                 <Blog />
                 <Contact reverseColor />

@@ -37,7 +37,7 @@ export const SecHeaderStyled = styled.div`
 export const WrapperStyled = styled.div`
     z-index: 2;
     position: relative;
-    ${({ theme: { colors, breakpoints } }) => css`
+    ${({ theme: { breakpoints } }) => css`
         ${breakpoints.lg} {
             &::before {
                 content: "";
@@ -47,7 +47,7 @@ export const WrapperStyled = styled.div`
                 left: 0;
                 width: 100%;
                 height: 1px;
-                background: ${colors.neutral_600}70;
+                background: var(--border);
             }
         }
     `}
@@ -65,7 +65,7 @@ export const LayerStyled = styled.h3`
         transform: translate(-50%, -50%);
         font-size: 90px;
         font-weight: 800;
-        color: ${colors.neutral_400}10;
+        color: ${colors.neutral}15;
         z-index: 2;
         pointer-events: none;
         text-transform: uppercase;

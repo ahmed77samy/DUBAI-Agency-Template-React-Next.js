@@ -25,12 +25,7 @@ function Features(props) {
         <Section {...props} padding={true} ref={featureRef}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="why you should choose"
-                    message="9 reasons"
-                    layer="features"
-                    align="left"
-                />
+                <SecHeader header="why you should choose" message="9 reasons" layer="features" align="left" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">{FeatList}</Row>

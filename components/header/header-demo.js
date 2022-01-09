@@ -49,27 +49,13 @@ function Header(props) {
                     </Col>
                     {/* Navbar */}
                     {/* tools */}
-                    <Col
-                        xs="auto"
-                        lg={2}
-                        className="d-flex align-items-center justify-content-end">
+                    <Col xs="auto" lg={2} className="d-flex align-items-center justify-content-end">
                         <Link href="https://themeforest.net/user/themezas" passHref>
-                            <DefaultButton
-                                as="a"
-                                variant="light"
-                                border
-                                target="_blank"
-                                size="sm"
-                                borderRadius
-                                className="a-reset d-none d-md-flex">
+                            <DefaultButton as="a" variant="light" border target="_blank" size="sm" borderRadius className="a-reset d-none d-md-flex">
                                 buy now
                             </DefaultButton>
                         </Link>
-                        <ToogleIcon
-                            className="d-flex d-lg-none ml-md-4"
-                            onClick={handleClick}
-                            open={open}
-                        />
+                        <ToogleIcon className="d-flex d-lg-none ml-md-4" onClick={handleClick} open={open} />
                     </Col>
                     {/* tools */}
                 </Row>

@@ -18,15 +18,15 @@ const DefaultInput = React.forwardRef((props, ref) => {
 // DefaultInput PropTypes
 DefaultInput.propTypes = {
     size: PropTypes.oneOf(["md", "sm", "lg"]).isRequired,
-    border: PropTypes.bool,
+    border: PropTypes.bool
 };
 
 // DefaultInput defaultProps
 DefaultInput.defaultProps = {
     size: "md",
-    border: false,
+    border: false
 };
 
-DefaultInput.displayName = 'DefaultInput';
+DefaultInput.displayName = "DefaultInput";
 
 export default DefaultInput;

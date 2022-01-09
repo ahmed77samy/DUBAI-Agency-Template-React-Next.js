@@ -3,8 +3,8 @@ import styled, { css } from "styled-components";
 export const DefaultButtonStyled = styled.button`
     ${({ theme, size, variant, border, borderRadius, square }) => css`
         position: relative;
-        background: var(--forground);
-        color: var(--color);
+        background: var(--btnforground);
+        color: var(--btncolor);
         border: 2px solid transparent;
         width: max-content;
         text-transform: uppercase;
@@ -14,48 +14,32 @@ export const DefaultButtonStyled = styled.button`
         font-weight: 500;
         transition: background 0.3s , color 0.3s , border 0.3s;
         ${
-            borderRadius === true ? 
-            css`
-                border-radius: 50px;
-            `
-            : 
-            square === true ? 
-            css`
-                border-radius: 0;
-            `
-            :
-            css`
-                border-radius: 2px;
-            `
+            borderRadius === true ?  css`border-radius: 50px;` : square === true ? css`border-radius: 0;` : css`border-radius: 2px;`
         }
         &:hover,
         &.active {
             background: transparent;
-            color: var(--forground);
-            border-color: var(--hover);
+            color: var(--btnforground);
+            border-color: var(--btnhover);
         }
         &:active {
-            border-color: var(--forground);
+            border-color: var(--btnforground);
         }
         ${variant === "primary" ? css`
-            --forground: ${theme.colors.primary};
-            --hover: ${theme.colors.primary_2};
-            --color: ${theme.colors.white};
-        `
-        : variant === "dark" ? css`
-            --forground: ${theme.colors.black};
-            --hover: ${theme.colors.neutral_200};
-            --color: ${theme.colors.white};
+            --btnforground: ${theme.colors.primary};
+            --btnhover: ${theme.colors.primary_2};
+            --btncolor: ${theme.colors.white};
         `
         : variant === "neutral" ? css`
-            --forground: ${theme.colors.neutral_50}70;
-            --hover: ${theme.colors.neutral_400};
-            --color: ${theme.colors.white};
+            --btnforground: var(--background);
+            --btnhover: var(--border);
+            --btncolor: var(--maincolor);
+            color: var(--maincolor) !important;
         `
         : variant === "light" && css`
-            --forground: ${theme.colors.white};
-            --hover: ${theme.colors.neutral_400};
-            --color: ${theme.colors.black};
+            --btnforground: ${theme.colors.white};
+            --btnhover: ${theme.colors.neutral};
+            --btncolor: ${theme.colors.black};
         `}
         ${size === "sm" ? css`
             padding: 0 ${theme.sizes.padding_sm};
@@ -87,21 +71,21 @@ export const DefaultButtonStyled = styled.button`
         `}
     ${border &&
         css`
-            color: var(--forground);
+            color: var(--btnforground);
             background: transparent;
-            border: 2px solid var(--hover);
+            border: 2px solid var(--btnhover);
             &:hover,
             &.active,
             &:active {
-                color: var(--color);
+                color: var(--btncolor);
                 border-color: transparent;
             }
             &:hover,
             &.active {
-                background: var(--forground);
+                background: var(--btnforground);
             }
             &:active {
-                background: var(--hover);
+                background: var(--btnhover);
             }
         `}
     `}

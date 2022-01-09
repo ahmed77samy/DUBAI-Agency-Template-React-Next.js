@@ -15,15 +15,13 @@ function Counter(props) {
             <Col xs={12} lg={4} key={index}>
                 <ConuterItem item={item} />
             </Col>
-        )
+        );
     });
 
     return (
         <Section {...props} padding={true}>
             <Container>
-                <Row className="layout-space">
-                    {counterItems}
-                </Row>
+                <Row className="layout-space">{counterItems}</Row>
             </Container>
         </Section>
     );

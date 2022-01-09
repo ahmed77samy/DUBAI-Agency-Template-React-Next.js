@@ -1,25 +1,21 @@
 import PropTypes from "prop-types";
 import { useEffect, useState } from "react";
-import {
-    FacebookShareButton,
-    LinkedinShareButton,
-    TwitterShareButton,
-} from "react-share";
+import { FacebookShareButton, LinkedinShareButton, TwitterShareButton } from "react-share";
 import { LinkStyled, SocialStyled, ShareStyled } from "./styled/social-styled";
 
 const itemSocial = [
     {
         content: "fb",
-        title: "FaceBook",
+        title: "FaceBook"
     },
     {
         content: "tw",
-        title: "Twitter",
+        title: "Twitter"
     },
     {
         content: "li",
-        title: "Linkedin",
-    },
+        title: "Linkedin"
+    }
 ];
 
 /**
@@ -64,13 +60,7 @@ function Social(props) {
             {itemSocial.map((e, i) => {
                 return (
                     <LinkStyled key={i} title={e.title} className="a-reset">
-                        {e.title === "FaceBook" ? (
-                            <FaceBook item={e} />
-                        ) : e.title === "Twitter" ? (
-                            <Twitter item={e} />
-                        ) : (
-                            e.title === "Linkedin" && <Linkedin item={e} />
-                        )}
+                        {e.title === "FaceBook" ? <FaceBook item={e} /> : e.title === "Twitter" ? <Twitter item={e} /> : e.title === "Linkedin" && <Linkedin item={e} />}
                     </LinkStyled>
                 );
             })}
@@ -80,16 +70,16 @@ function Social(props) {
 
 // Social PropTypes
 Social.propTypes = {
-    type: PropTypes.oneOf(["light", "dark", "primary", "neutral"]).isRequired,
+    type: PropTypes.oneOf(["light", "primary", "neutral"]).isRequired,
     direction: PropTypes.oneOf(["column", "row"]).isRequired,
-    url: PropTypes.string.isRequired,
+    url: PropTypes.string.isRequired
 };
 
 // Social defaultProps
 Social.defaultProps = {
     type: "light",
     direction: "row",
-    url: "/",
+    url: "/"
 };
 
 export default Social;

@@ -16,9 +16,7 @@ function SingleFacts(props) {
             <Col xs={12} sm={6} lg={3} key={index}>
                 <FactItemStyled>
                     <IconStyled as={item.Icon} />
-                    <h6 className="font-small text-neutral_400 text-capitalize">
-                        {item.fact}
-                    </h6>
+                    <h6 className="font-small text-body text-capitalize">{item.fact}</h6>
                 </FactItemStyled>
             </Col>
         );
@@ -28,11 +26,7 @@ function SingleFacts(props) {
         <Section {...props} padding>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="some facts"
-                    message="Facts to look at"
-                    layer="facts"
-                />
+                <SecHeader header="some facts" message="Facts to look at" layer="facts" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">{factsItems}</Row>

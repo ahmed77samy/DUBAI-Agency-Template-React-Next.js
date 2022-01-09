@@ -28,7 +28,7 @@ export const MaskStyled = styled.div`
         height: 100%;
         width: 100%;
         ${breakpoints.md} {
-            background: ${colors.neutral_500}20;
+            background: var(--background);
             width: calc(90%);
         }
     `}

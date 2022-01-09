@@ -1,12 +1,7 @@
 import menuspy from "menuspy";
 import PropTypes from "prop-types";
 import { useEffect, useRef } from "react";
-import {
-    LinkStyled,
-    NavbarStyled,
-    UlStyled,
-    LiStyled
-} from "./styled/navbar-preview-styled";
+import { LinkStyled, NavbarStyled, UlStyled, LiStyled } from "./styled/navbar-preview-styled";
 
 /**
  * {@inheritdoc}
@@ -19,7 +14,7 @@ function Navbar(props) {
     useEffect(() => {
         let isMounted = true;
         if (isMounted) {
-            let ms = new menuspy(navRef.current);
+            let ms = new menuspy(navRef.current , {enableLocationHash: false});
         }
         return () => (isMounted = false);
     }, []);
@@ -59,12 +54,12 @@ function Navbar(props) {
 
 // Navbar PropTypes
 Navbar.propTypes = {
-    open: PropTypes.bool.isRequired,
+    open: PropTypes.bool.isRequired
 };
 
 // Navbar defaultProps
 Navbar.defaultProps = {
-    open: false,
+    open: false
 };
 
 export default Navbar;

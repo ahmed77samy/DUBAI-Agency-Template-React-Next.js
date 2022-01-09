@@ -1,7 +1,4 @@
-import {
-    DigitalItemStyled,
-    HeaderStyled,
-} from "./styled/digital-item-styled";
+import { DigitalItemStyled, HeaderStyled } from "./styled/digital-item-styled";
 import PropTypes from "prop-types";
 
 /**
@@ -20,14 +17,7 @@ function DigitalItem(props) {
             </HeaderStyled>
             {/* header */}
             {/* content */}
-            <p>
-                Lorem ipsum is simply dummy text of the printing and
-                typesetting. Lorem Ipsum has been the industry standard dummy.
-                Lorem Ipsum has been the industry standard dummy. Lorem ipsum is
-                simply dummy text of the printing and typesetting. Lorem Ipsum
-                has been the industry standard dummy. Lorem Ipsum has been the
-                industry standard dummy.
-            </p>
+            <p>Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry standard dummy. Lorem Ipsum has been the industry standard dummy. Lorem ipsum is simply dummy text of the printing and typesetting. Lorem Ipsum has been the industry standard dummy. Lorem Ipsum has been the industry standard dummy.</p>
             <p className="m-0">{description}</p>
             {/* content */}
         </DigitalItemStyled>
@@ -39,8 +29,8 @@ DigitalItem.propTypes = {
     item: PropTypes.shape({
         title: PropTypes.string.isRequired,
         description: PropTypes.string.isRequired,
-        Icon: PropTypes.func.isRequired,
-    }),
+        Icon: PropTypes.func.isRequired
+    })
 };
 
 export default DigitalItem;

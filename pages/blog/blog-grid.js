@@ -22,7 +22,7 @@ function Blog() {
                     ever before."
                 />
                 <Ads />
-                <BlogGridWrapper />
+                <BlogGridWrapper reverseColor />
             </Layout>
         </div>
     );

@@ -13,11 +13,7 @@ function Faq(props) {
     // loop for method_items to create MethodItem
     const MethodItems = method_items.map((item, index) => {
         return (
-            <Col
-                key={index}
-                xs={12}
-                md={index === 2 ? 12 : index <= 2 && 6}
-                lg={index <= 2 && 4}>
+            <Col key={index} xs={12} md={index === 2 ? 12 : index <= 2 && 6} lg={index <= 2 && 4}>
                 <MethodItem item={item} data-num={`0${index + 1}`} />
             </Col>
         );
@@ -27,12 +23,7 @@ function Faq(props) {
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="Frequently Asked Questions"
-                    message="the main method"
-                    layer="faq"
-                    align="left"
-                />
+                <SecHeader header="Frequently Asked Questions" message="the main method" layer="faq" align="left" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">{MethodItems}</Row>

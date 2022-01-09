@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const SliderStyled = styled.div`
     position: relative;
     ${({ theme: { colors } }) => css`
-        background: ${colors.neutral_300};
+        background: ${colors.white};
         overflow: hidden;
     `}
 `;

@@ -1,16 +1,15 @@
 import Layout from "components/layouts/layout-demo";
-import DigitalExperience from "modules/about/digital-experience";
-import Awards from "modules/about/awards";
-import Testimonials from "modules/about/testimonials";
-import Counter from "modules/about/counter";
-import BannerVideo from "modules/demo/banner-video";
+import BannerVideo from "modules/demo/banner-video-two";
 import Blog from "modules/demo/blog";
-import Contact from "modules/contact-us/contact";
-import Portfolio from "modules/demo/portfolio-two";
-import DigitalAgency from "modules/services/digital";
+import Portfolio from "modules/demo/portfolio";
 import Slider from "modules/demo/slider-viemo";
 import Head from "next/head";
 import Ads from "components/ads";
+import Marketing from "modules/services/marketing";
+import WhatAbout from "modules/about/what-about";
+import Subscrib from "modules/about/subscrib";
+import Sponser from "modules/about/sponser";
+import Map from "modules/contact-us/map";
 
 /**
  * {@inheritdoc}
@@ -24,17 +23,16 @@ function MainDemo4() {
             </Head>
             <Layout>
                 <Slider />
-                <DigitalAgency />
-                <DigitalExperience />
-                <Counter />
+                <Marketing />
+                <WhatAbout />
+                <Subscrib />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo />
-                <Testimonials reverseColor />
-                <Awards reverseColor />
+                <BannerVideo reverseColor />
+                <Sponser reverseColor />
                 <Ads />
                 <Blog />
-                <Contact reverseColor />
+                <Map reverseColor />
             </Layout>
         </div>
     );

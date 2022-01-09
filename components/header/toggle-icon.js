@@ -8,20 +8,12 @@ import { ToogleIconStyled } from "./styled/toogle-icon-styled";
  * @returns {React.Component}
  */
 function ToogleIcon(props) {
-    return (
-        <ToogleIconStyled {...props}>
-            {props.open ? (
-                <TimesIcon className="icon" />
-            ) : (
-                <BarsIcon className="icon" />
-            )}
-        </ToogleIconStyled>
-    );
+    return <ToogleIconStyled {...props}>{props.open ? <TimesIcon className="icon" /> : <BarsIcon className="icon" />}</ToogleIconStyled>;
 }
 
 // ToogleIcon PropTypes
 ToogleIcon.propTypes = {
-    open: PropTypes.bool.isRequired,
+    open: PropTypes.bool.isRequired
 };
 
 // ToogleIcon defaultProps

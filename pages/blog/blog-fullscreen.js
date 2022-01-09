@@ -22,7 +22,7 @@ function Blog() {
                     ever before."
                 />
                 <Ads />
-                <BlogFullscreenWrapper />
+                <BlogFullscreenWrapper reverseColor />
             </Layout>
         </div>
     );

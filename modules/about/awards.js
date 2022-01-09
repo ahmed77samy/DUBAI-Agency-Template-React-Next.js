@@ -2,7 +2,7 @@ import SecHeader from "components/layouts/sec-header";
 import Section from "components/layouts/section";
 import { Col, Container, Row } from "react-bootstrap";
 import { awards_item } from "./items";
-import AwardItem from "./award_item.js"
+import AwardItem from "./award_item.js";
 
 /**
  * {@inheritdoc}
@@ -23,12 +23,7 @@ function Awards(props) {
         <Section {...props} padding>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="Check out my awards"
-                    message="Experience"
-                    layer="awards"
-                    align="center"
-                />
+                <SecHeader header="Check out my awards" message="Experience" layer="awards" align="center" />
                 {/* header */}
                 {/* content */}
                 <Row className="layout-space">{awardItems}</Row>

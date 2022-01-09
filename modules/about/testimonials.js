@@ -1,12 +1,7 @@
 import SecHeader from "components/layouts/sec-header";
 import Section from "components/layouts/section";
 import { Container } from "react-bootstrap";
-import {
-    ControlStyled,
-    ContentStyled,
-    NextButtonStyled,
-    PrevButtonStyled,
-} from "./styled/testimonials-styled";
+import { ControlStyled, ContentStyled, NextButtonStyled, PrevButtonStyled } from "./styled/testimonials-styled";
 import { Swiper, SwiperSlide } from "swiper/react";
 import SwiperCore, { Autoplay, EffectFade, Navigation } from "swiper";
 import DefaultButton from "components/default-button";
@@ -28,25 +23,14 @@ function Testimonials(props) {
 
     // loop for testimonial_items to create TestimonialItem
     const testimonialItems = testimonial_items.map((item, index) => {
-        return (
-            <SwiperSlide key={index}>
-                {(PropsSlide) => (
-                    <TestimonialItem item={item} PropsSlide={PropsSlide} />
-                )}
-            </SwiperSlide>
-        );
+        return <SwiperSlide key={index}>{(PropsSlide) => <TestimonialItem item={item} PropsSlide={PropsSlide} />}</SwiperSlide>;
     });
 
     return (
         <Section {...props} padding={true}>
             <Container>
                 {/* header */}
-                <SecHeader
-                    header="Feedback our clients."
-                    message="Clients See"
-                    layer="Testimonials"
-                    align="center"
-                />
+                <SecHeader header="Feedback our clients." message="Clients See" layer="Testimonials" align="center" />
                 {/* header */}
                 {/* content */}
                 <ContentStyled>
@@ -58,16 +42,16 @@ function Testimonials(props) {
                         grabCursor
                         effect="fade"
                         fadeEffect={{
-                            crossFade: true,
+                            crossFade: true
                         }}
                         autoplay={{
                             delay: 9000,
-                            disableOnInteraction: false,
+                            disableOnInteraction: false
                         }}
                         navigation={{
                             disabledClass: "disabled",
                             prevEl: prevRef.current,
-                            nextEl: nextRef.current,
+                            nextEl: nextRef.current
                         }}
                         /**
                          * Delay execution for the refs to be defined
@@ -76,36 +60,23 @@ function Testimonials(props) {
                          */
                         onSwiper={(swiper) => {
                             setTimeout(() => {
-                                swiper.params.navigation.prevEl =
-                                    prevRef.current;
-                                swiper.params.navigation.nextEl =
-                                    nextRef.current;
+                                swiper.params.navigation.prevEl = prevRef.current;
+                                swiper.params.navigation.nextEl = nextRef.current;
                                 swiper.navigation.destroy();
                                 swiper.navigation.init();
                                 swiper.navigation.update();
                             });
-                        }}>
+                        }}
+                    >
                         {testimonialItems}
                     </Swiper>
                     {/* Swiper */}
                     {/* control */}
                     <ControlStyled>
-                        <PrevButtonStyled
-                            as={DefaultButton}
-                            ref={prevRef}
-                            variant="light"
-                            borderRadius
-                            size="sm"
-                            square>
+                        <PrevButtonStyled as={DefaultButton} ref={prevRef} variant="neutral" size="sm" square>
                             <ArrowLeftIcon />
                         </PrevButtonStyled>
-                        <NextButtonStyled
-                            as={DefaultButton}
-                            ref={nextRef}
-                            variant="light"
-                            borderRadius
-                            size="sm"
-                            square>
+                        <NextButtonStyled as={DefaultButton} ref={nextRef} variant="neutral" size="sm" square>
                             <ArrowRightIcon />
                         </NextButtonStyled>
                     </ControlStyled>

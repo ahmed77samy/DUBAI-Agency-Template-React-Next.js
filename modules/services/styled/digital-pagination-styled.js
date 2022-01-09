@@ -15,7 +15,7 @@ export const PaginationItemStyled = styled.span`
         ${isactive &&
         css`
             ${ContentStyled} {
-                border-color: ${colors.neutral_700}70;
+                border-color: var(--border);
                 background: transparent;
                 .icon {
                     color: ${colors.primary};
@@ -35,7 +35,7 @@ export const ContentStyled = styled.div`
         row-gap: 25px;
         height: 100%;
         border: 1px solid transparent;
-        background: ${colors.tertiary};
+        background: var(--background);
         cursor: pointer;
         transition: 0.3s;
         .icon {

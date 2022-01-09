@@ -2,14 +2,14 @@ import styled, { css } from "styled-components";
 
 export const PricingItemStyled = styled.div`
     ${({ theme: { colors } }) => css`
-        background: ${colors.neutral_500}10;
+        background: var(--background);
     `}
 `;
 
 export const HeaderStyled = styled.div`
     ${({ theme: { colors } }) => css`
         padding: 30px 10px;
-        background: ${colors.neutral_500}10;
+        background: var(--border);
     `}
 `;
 
@@ -31,6 +31,6 @@ export const UlStyled = styled.ul`
 export const HrStyled = styled.hr`
     ${({ theme: { colors } }) => css`
         margin: 30px 0;
-        border-color: ${colors.neutral_600}70;
+        border-color: var(--border);
     `}
 `;
