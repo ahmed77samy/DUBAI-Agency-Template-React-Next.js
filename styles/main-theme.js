@@ -21,19 +21,6 @@ const MainTheme = {
         white: "#ffffff",
         text: "#c6c9d8bf",
         neutral: "#a7a7a7",
-
-
-
-        neutral_50: "#ffff00",
-        neutral_100: "#ffff00",
-        neutral_200: "#ffff00",
-        neutral_300: "#ffff00",
-        neutral_400: "#ffff00",
-        neutral_500: "#ffff00",
-        neutral_600: "#ffff00",
-        neutral_700: "#ffff00",
-        neutral_800: "#ffff00",
-        neutral_900: "#ffff00",
     },
     sizes: {
         height_sm: "45px",

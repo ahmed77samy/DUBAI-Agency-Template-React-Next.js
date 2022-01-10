@@ -167,6 +167,18 @@ export const demos_items = [
         route: "/blog/blog-single",
     },
     {
+        img: "/img/demos/services.jpg",
+        name: "services",
+        description: "services inner page",
+        route: "/services/services",
+    },
+    {
+        img: "/img/demos/service-details.jpg",
+        name: "service details",
+        description: "services inner page",
+        route: "/services/service-details",
+    },
+    {
         img: "/img/demos/contact-us.jpg",
         name: "contact-us",
         description: "contact inner page",

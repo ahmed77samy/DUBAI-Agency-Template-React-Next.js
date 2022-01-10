@@ -28,7 +28,7 @@ function MainDemo2() {
                 <Subscrib />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo reverseColor />
+                <BannerVideo />
                 <OurTeam reverseColor />
                 <Ads />
                 <Blog />

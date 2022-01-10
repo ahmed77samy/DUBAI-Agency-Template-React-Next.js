@@ -28,7 +28,7 @@ function MainDemo3() {
                 <Counter />
                 <Ads />
                 <Portfolio reverseColor />
-                <BannerVideo reverseColor />
+                <BannerVideo />
                 <Awards reverseColor />
                 <Ads />
                 <Blog />

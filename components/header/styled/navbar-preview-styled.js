@@ -1,7 +1,7 @@
 import styled, { css } from "styled-components";
 
 export const NavbarStyled = styled.nav`
-    ${({ theme: { colors, variables, breakpoints }, open }) => css`
+    ${({ theme: { variables, breakpoints }, open }) => css`
         display: block;
         position: fixed;
         width: 100%;

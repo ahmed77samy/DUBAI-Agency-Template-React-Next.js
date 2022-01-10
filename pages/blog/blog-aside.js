@@ -21,7 +21,7 @@ function Blog() {
                     patterns in order to look at things in different way than
                     ever before."
                 />
-                <Ads />
+                <Ads reverseColor />
                 <BlogAsideLayout reverseColor />
             </Layout>
         </div>

@@ -4,10 +4,6 @@ import { SpanStyled } from "./three-lines-styled";
 
 export const ModalStyled = styled(Modal)`
     ${({ theme: { colors, breakpoints } }) => css`
-        --foreground: ${colors.main};
-        --background: ${colors.tertiary};
-        --border: ${colors.neutral}20;
-        --maincolor: ${colors.white};
         background: ${colors.neutral}50;
         .modal-content {
             background: ${colors.main};

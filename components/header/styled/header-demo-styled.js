@@ -4,8 +4,6 @@ export const HeaderStyled = styled.header`
     ${({ theme: { variables, colors, breakpoints }, scroll }) => css`
         --foreground: ${colors.tertiary};
         --background: ${colors.tertiary2};
-        --border: ${colors.neutral}20;
-        --maincolor: ${colors.white};
         height: ${variables.headerHeight};
         width: 100%;
         display: flex;

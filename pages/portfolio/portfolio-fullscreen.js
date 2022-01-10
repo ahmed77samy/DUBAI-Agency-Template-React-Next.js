@@ -21,7 +21,7 @@ function Portfolio() {
                     patterns in order to look at things in different way than
                     ever before."
                 />
-                <Ads />
+                <Ads reverseColor />
                 <PortfolioFullscreenWrapper reverseColor />
             </Layout>
         </div>

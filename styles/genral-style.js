@@ -15,9 +15,13 @@ ${({ theme: { colors, variables } }) => css`
         scroll-behavior: smooth;
     }
     body {
+        --foreground: ${colors.main};
+        --background: ${colors.tertiary};
+        --border: ${colors.neutral}20;
+        --maincolor: ${colors.white};
         font-size: 16px;
-        background: ${colors.main};
-        color: ${colors.white};
+        background: var(--foreground);
+        color: var(--maincolor);
         font-family: "Poppins", sans-serif;
     }
     button.active.focus,
@@ -135,44 +139,14 @@ ${({ theme: { colors, variables } }) => css`
     .text-primary {
         color: ${colors.primary} !important;
     }
-    .text-secondary {
-        color: ${colors.secondary} !important;
-    }
     .text-black {
         color: ${colors.black} !important;
     }
     .text-white {
         color: ${colors.white} !important;
     }
-    .text-neutral_50 {
-        color: ${colors.neutral_50} !important;
-    }
-    .text-neutral_100 {
-        color: ${colors.neutral_100} !important;
-    }
-    .text-neutral_200 {
-        color: ${colors.neutral_200} !important;
-    }
-    .text-neutral_300 {
-        color: ${colors.neutral_300} !important;
-    }
-    .text-neutral_400 {
-        color: ${colors.neutral_400} !important;
-    }
-    .text-neutral_500 {
-        color: ${colors.neutral_500} !important;
-    }
-    .text-neutral_600 {
-        color: ${colors.neutral_600} !important;
-    }
-    .text-neutral_700 {
-        color: ${colors.neutral_700} !important;
-    }
-    .text-neutral_800 {
-        color: ${colors.neutral_800} !important;
-    }
-    .text-neutral_900 {
-        color: ${colors.neutral_900} !important;
+    .text-neutral {
+        color: ${colors.neutral} !important;
     }
     .bg-main {
         background-color: ${colors.main} !important;
@@ -186,47 +160,14 @@ ${({ theme: { colors, variables } }) => css`
     .bg-primary_2 {
         background-color: ${colors.primary_2} !important;
     }
-    .bg-secondary {
-        background-color: ${colors.secondary} !important;
-    }
-    .bg-secondary_2 {
-        background-color: ${colors.secondary_2} !important;
-    }
     .bg-black {
         background-color: ${colors.black} !important;
     }
     .bg-white {
         background-color: ${colors.white} !important;
     }
-    .bg-neutral_50 {
-        background-color: ${colors.neutral_50} !important;
-    }
-    .bg-neutral_100 {
-        background-color: ${colors.neutral_100} !important;
-    }
-    .bg-neutral_200 {
-        background-color: ${colors.neutral_200} !important;
-    }
-    .bg-neutral_300 {
-        background-color: ${colors.neutral_300} !important;
-    }
-    .bg-neutral_400 {
-        background-color: ${colors.neutral_400} !important;
-    }
-    .bg-neutral_500 {
-        background-color: ${colors.neutral_500} !important;
-    }
-    .bg-neutral_600 {
-        background-color: ${colors.neutral_600} !important;
-    }
-    .bg-neutral_700 {
-        background-color: ${colors.neutral_700} !important;
-    }
-    .bg-neutral_800 {
-        background-color: ${colors.neutral_800} !important;
-    }
-    .bg-neutral_900 {
-        background-color: ${colors.neutral_900} !important;
+    .bg-neutral {
+        background-color: ${colors.neutral} !important;
     }
     .font-100 {
         font-weight: 100;
