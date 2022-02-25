@@ -49,8 +49,8 @@ function Slider(props) {
                             view demos
                         </DefaultButton>
                     </Link>
-                    <Link href="/documentation" passHref>
-                        <DefaultButton as="a" className="opacity-0 a-reset" ref={btn2Ref} borderRadius border>
+                    <Link href="https://elegant-perlman-0ef578.netlify.app/" passHref>
+                        <DefaultButton as="a" className="opacity-0 a-reset" target="_blank" ref={btn2Ref} borderRadius border>
                             documentation
                         </DefaultButton>
                     </Link>
